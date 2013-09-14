@@ -7,7 +7,7 @@
 		* Note: to access this in your theme, it start first with '$assets_' so for the common js files
 		*		you can acess as '$assets_js' the same in css
 		*/
-		/**'common_assets' => array(
+		'common_assets' => array(
 			'css' => array(),
 			'js' => array(),
 		),
@@ -16,8 +16,8 @@
 			'header', 'layout', 'footer',
 		),
 
-		'static_data' = array(
+		'static_data' => array(
 			'base_url' => $GLOBALS['path']['base_root'],
 			'title' => 'Awonsa Content Management System',
-		),*/
+		),
 	);
