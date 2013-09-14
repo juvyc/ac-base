@@ -58112,3 +58112,164 @@ array(2) {
   }
 }
 
+[14-Sep-2013 11:34:46 UTC] PHP Fatal error:  Class 'requestmethod_hpr' not found in C:\xampp\htdocs\ac-base-framework-final\ac-base\__cores\base.c\base.c.helper.php on line 18
+[14-Sep-2013 11:41:16 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in C:\xampp\htdocs\ac-base-framework-final\ac-base\__apps\config\theme.a.c.php on line 19
+[14-Sep-2013 11:41:41 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in C:\xampp\htdocs\ac-base-framework-final\ac-base\__apps\config\theme.a.c.php on line 19
+[14-Sep-2013 15:15:17 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\ac-base-framework-final\ac-base\__cores\system.c\system.c.php on line 1047
+[14-Sep-2013 16:41:57 UTC] Missing argument 2 for Default_Clr::action_index(): MAJOR PROBLEM at localhost: September 14, 2013, 6:41 pm
+ errFile: C:\xampp\htdocs\ac-base-framework-final\ac-base\__apps\builder\default\controller\default_clr.php
+errLine: 12
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(47) "C:\xampp\htdocs\ac-base-framework-final\ac-base"
+    ["base_root"]=>
+    string(33) "/ac-base-framework-final/ac-base/"
+    ["apps_path"]=>
+    string(54) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__apps"
+    ["files_path"]=>
+    string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__files"
+    ["cores_path"]=>
+    string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__cores"
+    ["themes_path"]=>
+    string(56) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB"]=>
+      object(_DB)#4 (7) {
+        ["db_name":protected]=>
+        string(4) "test"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler"]=>
+        resource(19) of type (mysql link)
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(47) "C:\xampp\htdocs\ac-base-framework-final\ac-base"
+            ["base_root"]=>
+            string(33) "/ac-base-framework-final/ac-base/"
+            ["apps_path"]=>
+            string(54) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__apps"
+            ["files_path"]=>
+            string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__files"
+            ["cores_path"]=>
+            string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__cores"
+            ["themes_path"]=>
+            string(56) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__themes"
+          }
+        }
+      }
+      ["Uri"]=>
+      object(_Uri)#5 (0) {
+      }
+      ["config"]=>
+      object(_CONFIG)#3 (3) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+        ["route_extension"]=>
+        string(4) "html"
+      }
+      ["globals"]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(47) "C:\xampp\htdocs\ac-base-framework-final\ac-base"
+          ["base_root"]=>
+          string(33) "/ac-base-framework-final/ac-base/"
+          ["apps_path"]=>
+          string(54) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__apps"
+          ["files_path"]=>
+          string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__files"
+          ["cores_path"]=>
+          string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__cores"
+          ["themes_path"]=>
+          string(56) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__themes"
+        }
+      }
+      ["static_routes"]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "default/index"
+        ["^[0-9]*$"]=>
+        string(7) "default"
+      }
+      ["builder"]=>
+      object(_Builder)#6 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(47) "C:\xampp\htdocs\ac-base-framework-final\ac-base"
+            ["base_root"]=>
+            string(33) "/ac-base-framework-final/ac-base/"
+            ["apps_path"]=>
+            string(54) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__apps"
+            ["files_path"]=>
+            string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__files"
+            ["cores_path"]=>
+            string(55) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__cores"
+            ["themes_path"]=>
+            string(56) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(7) "default"
+        ["bldr_file"]=>
+        string(97) "C:\xampp\htdocs\ac-base-framework-final\ac-base/__apps/builder/default/controller/default_clr.php"
+        ["Uri"]=>
+        object(_Uri)#7 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        string(5) "index"
+        ["ishome"]=>
+        bool(true)
+        ["CONFIG"]=>
+        object(_CONFIG)#8 (3) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+          ["route_extension"]=>
+          string(4) "html"
+        }
+      }
+      ["inclr_base_segment"]=>
+      NULL
+      ["inclr_end_segment"]=>
+      NULL
+      ["last_segment"]=>
+      string(8) "dancers2"
+    }
+  }
+}
+

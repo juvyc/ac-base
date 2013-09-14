@@ -603,7 +603,6 @@
 									if($this->Uri->get_segment(2) != ""){
 										$sub_ext_route = $this->Uri->get_segment(2);
 										if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
-											
 											$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
 											
 											/**
@@ -640,11 +639,9 @@
 											require_once($this->builder->bldr_file);
 											$sub_ctrl = $this->builder->route . '_' . ucfirst($this->Uri->get_segment(1));
 											if($sub_clr_class = $this->builder->_caller($sub_ctrl)){
-												
 												$sub_ext_route = $this->Uri->get_segment(3);
 												if($sub_ext_route != ""){
 													if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
-														
 														$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
 														
 														/**
@@ -676,7 +673,258 @@
 														}
 														
 														return $output;
+													}else if($this->builder->_checker($this->Uri->get_segment(1) . '/' . $sub_ext_route, $this->Uri->get_segment(2))){
 														
+														require_once($this->builder->bldr_file);
+														
+														$sub_sub_class = ucfirst($this->Uri->get_segment(3)) . '_' . ucfirst($this->Uri->get_segment(1));
+														if($sub_clr_class = $this->builder->_caller($sub_sub_class)){
+															$sub_ext_route = $this->Uri->get_segment(4);
+															if($sub_ext_route != ""){
+																if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
+																	$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
+																	
+																	/**
+																	* if current requested segment is exist, then it call the method
+																	*/
+																	$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																	$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																	
+																	
+																	$output = "";
+																	
+																	/**
+																	* detect the load before function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_before')){
+																		$sub_method_before = array($sub_clr_class, 'load_before');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	
+																	$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																	
+																	/**
+																	* detect the load after function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_after')){
+																		$sub_method_before = array($sub_clr_class, 'load_after');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	return $output;
+																}else if(method_exists($sub_clr_class, 'load_404')){
+														
+																	header("HTTP/1.0 404 Page not found!");
+																	
+																	$sub_method = array($sub_clr_class, 'load_404');
+																	
+																	/**
+																	* if current requested segment is exist, then it call the method
+																	*/
+																	$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																	$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																	
+																	
+																	$output = "";
+																	
+																	/**
+																	* detect the load before function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_before')){
+																		$sub_method_before = array($sub_clr_class, 'load_before');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	
+																	$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																	
+																	/**
+																	* detect the load after function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_after')){
+																		$sub_method_before = array($sub_clr_class, 'load_after');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	return $output;
+																}else if(isset($this->static_routes['_404_']) && $this->static_routes['_404_'] != ""){
+																	header("HTTP/1.0 404 Page not found!");
+																	$extracted_404 = explode('/', $this->static_routes['_404_']);
+																	$this->builder->route = $extracted_404[0];
+																	if($this->builder->_checker()){
+																		if(!$this->builder->_caller())
+																			require_once($this->builder->bldr_file);
+																		
+																		
+																		$sub_clr_class = $this->builder->_caller();
+																		
+																		if(isset($extracted_404[1]) && $extracted_404[1] != "")
+																			$sub_method = array($sub_clr_class, 'action_' . $extracted_404[1]);
+																		else
+																			$sub_method = array($sub_clr_class, 'action_index');
+																	
+																		/**
+																		* if current requested segment is exist, then it call the method
+																		*/
+																		$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																		$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																		
+																		
+																		$output = "";
+																		
+																		/**
+																		* detect the load before function
+																		*/
+																		if(method_exists($sub_clr_class, 'load_before')){
+																			$sub_method_before = array($sub_clr_class, 'load_before');
+																			$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																		}
+																		
+																		
+																		$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																		
+																		/**
+																		* detect the load after function
+																		*/
+																		if(method_exists($sub_clr_class, 'load_after')){
+																			$sub_method_before = array($sub_clr_class, 'load_after');
+																			$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																		}
+																		
+																		return $output;
+																		
+																	}
+																}
+															}else if(method_exists($sub_clr_class, 'action_index')){
+															
+																$sub_method = array($sub_clr_class, 'action_index');
+																
+																/**
+																* if current requested segment is exist, then it call the method
+																*/
+																$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																
+																
+																$output = "";
+																
+																/**
+																* detect the load before function
+																*/
+																if(method_exists($sub_clr_class, 'load_before')){
+																	$sub_method_before = array($sub_clr_class, 'load_before');
+																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																}
+																
+																
+																$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																
+																/**
+																* detect the load after function
+																*/
+																if(method_exists($sub_clr_class, 'load_after')){
+																	$sub_method_before = array($sub_clr_class, 'load_after');
+																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																}
+																
+																return $output;
+															}else if(method_exists($sub_clr_class, 'load_404')){
+																
+																header("HTTP/1.0 404 Page not found!");
+																
+																$sub_method = array($sub_clr_class, 'load_404');
+																
+																/**
+																* if current requested segment is exist, then it call the method
+																*/
+																$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																
+																
+																$output = "";
+																
+																/**
+																* detect the load before function
+																*/
+																if(method_exists($sub_clr_class, 'load_before')){
+																	$sub_method_before = array($sub_clr_class, 'load_before');
+																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																}
+																
+																
+																$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																
+																/**
+																* detect the load after function
+																*/
+																if(method_exists($sub_clr_class, 'load_after')){
+																	$sub_method_before = array($sub_clr_class, 'load_after');
+																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																}
+																
+																return $output;
+															}else if(isset($this->static_routes['_404_']) && $this->static_routes['_404_'] != ""){
+																header("HTTP/1.0 404 Page not found!");
+																$extracted_404 = explode('/', $this->static_routes['_404_']);
+																$this->builder->route = $extracted_404[0];
+																if($this->builder->_checker()){
+																	if(!$this->builder->_caller())
+																		require_once($this->builder->bldr_file);
+																	
+																	
+																	$sub_clr_class = $this->builder->_caller();
+																	
+																	if(isset($extracted_404[1]) && $extracted_404[1] != "")
+																		$sub_method = array($sub_clr_class, 'action_' . $extracted_404[1]);
+																	else
+																		$sub_method = array($sub_clr_class, 'action_index');
+																
+																	/**
+																	* if current requested segment is exist, then it call the method
+																	*/
+																	$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
+																	$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																	
+																	
+																	$output = "";
+																	
+																	/**
+																	* detect the load before function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_before')){
+																		$sub_method_before = array($sub_clr_class, 'load_before');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	
+																	$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																	
+																	/**
+																	* detect the load after function
+																	*/
+																	if(method_exists($sub_clr_class, 'load_after')){
+																		$sub_method_before = array($sub_clr_class, 'load_after');
+																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	}
+																	
+																	return $output;
+																	
+																}
+															}
+														}else{
+															$this->_critical_exit();
+														}
+														
+														//--------------------------------------------------------------------------
+														//--------------------------------------------------------------------------
+														//--------------------------------------------------------------------------
+														#DEV--------------------------------------------------------------------------
+														#DEV--------------------------------------------------------------------------
+														#DEV--------------------------------------------------------------------------
+														//--------------------------------------------------------------------------
+														//--------------------------------------------------------------------------
+														//--------------------------------------------------------------------------
 													}else if(method_exists($sub_clr_class, 'load_404')){
 														
 														header("HTTP/1.0 404 Page not found!");
@@ -925,8 +1173,7 @@
 									}
 								}
 								
-								//echo $this->builder->bldr_file;
-								#DEV--------------------------------------------------------------------------
+								
 							}else if(method_exists($current, 'load_404')){
 								/**
 								* if _404 method is inside the class of the current requested segment
