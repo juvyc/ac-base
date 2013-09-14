@@ -4,12 +4,6 @@
  {
 	public function action_index()
 	{
-		return $this
-				->Ini()
-				->View()
-				->set_data(array())
-				->use_prepared('content', 'helloworld/helloworld');
+		return 'I\'m an admin controller of helloworld';
 	}
-	
-	public function action_hi(){}
  }
