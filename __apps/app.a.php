@@ -7,6 +7,8 @@
 	
 	define('base_url', $GLOBALS['path']['base_root']);
 	
+	define('base_dir', $GLOBALS['path']['base_dir']);
+	
 	require_once $GLOBALS['path']['apps_path'] . '/config/config.a.c.php';
 	require_once $GLOBALS['path']['apps_path'] . '/config/maintenance.a.c.php';
 	require_once $GLOBALS['path']['apps_path'] . '/config/connection.a.c.php';
