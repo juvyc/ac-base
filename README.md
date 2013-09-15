@@ -1,6 +1,6 @@
 <h1>AC-Base</h1>
 
-AC-Base is a lighter and flexible PHP framework, design based on the MVC (Model Views Controller) structure to help you quicker and easier.
+AC-Base is a lighter and flexible PHP framework, design based on the MVC (Model Views Controller) structure to help you develop a system or website quicker and easier.
 
 <h2>Installation</h2>
 
