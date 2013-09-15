@@ -94,14 +94,25 @@
 		}
 		
 		/**
+		* For File
+		*/
+		
+		public function File(){
+		
+			if(!class_exists('_File')) require_once(dirname(dirname(__FILE__)) . '/file.c/file.c.php');
+			
+			return new _File();
+		}
+		
+		/**
 		* For Photo Resize
 		*/
 		
-		public function Photoresize(){
+		public function ImageResize(){
 		
-			if(!class_exists('_photoresize')) require_once(dirname(dirname(__FILE__)) . '/photoresize.c/photoresize.c.php');
+			if(!class_exists('_Imageresize')) require_once(dirname(dirname(__FILE__)) . '/imageresize.c/imageresize.c.php');
 			
-			return new _Photoresize();
+			return new _Imageresize();
 		}
 		
 		/**

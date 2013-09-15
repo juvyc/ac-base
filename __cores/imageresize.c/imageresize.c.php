@@ -16,7 +16,7 @@
    #
    # ========================================================================#
 		
-		class _Photoresize
+		class _Imageresize
 		{
 			// *** Class variables
 			private $image;
@@ -24,9 +24,9 @@
 		    private $height;
 			private $imageResized;
 			
-			public function _Photoresize(){}
+			public function _Imageresize(){}
 			
-			public function resize($fileName)
+			public function forge($fileName)
 			{
 				// *** Open up the file
 				$this->image = $this->openImage($fileName);
