@@ -12,7 +12,7 @@
 		*/
 		public function Mod($app_mod = "")
 		{
-			require_once(dirname(__FILE__) . '/base.c.mod.php');
+			if(!class_exists('Base_Model')) require_once(dirname(__FILE__) . '/base.c.mod.php');
 			return new Base_Model($app_mod);
 			
 		}
@@ -22,7 +22,7 @@
 		*/
 		public function View($app_view='')
 		{
-			require_once(dirname(__FILE__) . '/base.c.view.php');
+			if(!class_exists('Base_View')) require_once(dirname(__FILE__) . '/base.c.view.php');
 			return new Base_View($app_view);
 		}
 		
@@ -47,7 +47,7 @@
 		*/
 		public function Action()
 		{
-			require_once(dirname(__FILE__) . '/base.c.action.php');
+			if(!class_exists('Action_Base')) require_once(dirname(__FILE__) . '/base.c.action.php');
 			return new Action_Base();
 		}
 		
@@ -56,7 +56,8 @@
 		*/
 		public function SERVER()
 		{
-			require_once(dirname(__FILE__) . '/base.c.action.php');
+			if(!class_exists('Action_Base'))  require_once(dirname(__FILE__) . '/base.c.action.php');
+			
 			return new Action_Base('SERVER');
 		}
 		
@@ -65,8 +66,42 @@
 		*/
 		public function Helper($name = '')
 		{
-			require_once(dirname(__FILE__) . '/base.c.helper.php');	
+			if(!class_exists('_Helper')) require_once(dirname(__FILE__) . '/base.c.helper.php');	
+			
 			return new _Helper($name);			
+		}
+		
+		/**
+		* For upload
+		*/
+		
+		public function Upload(){
+		
+			if(!class_exists('_Upload')) require_once(dirname(dirname(__FILE__)) . '/upload.c/upload.c.php');
+			
+			return new _Upload();
+		}
+		
+		/**
+		* For Directory
+		*/
+		
+		public function Dir(){
+		
+			if(!class_exists('_Dir')) require_once(dirname(dirname(__FILE__)) . '/dir.c/dir.c.php');
+			
+			return new _Dir();
+		}
+		
+		/**
+		* For Photo Resize
+		*/
+		
+		public function Photoresize(){
+		
+			if(!class_exists('_photoresize')) require_once(dirname(dirname(__FILE__)) . '/photoresize.c/photoresize.c.php');
+			
+			return new _Photoresize();
 		}
 		
 		/**
@@ -98,7 +133,7 @@
 		*/
 		public function session()
 		{
-			require_once(dirname(dirname(__FILE__)) . '/session.c/session.c.php');
+			if(!class_exists('Base_Session')) require_once(dirname(dirname(__FILE__)) . '/session.c/session.c.php');
 			return new Base_Session();
 		}
 		
