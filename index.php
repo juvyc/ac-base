@@ -40,27 +40,7 @@
 	* Ex. '/'
 	*/
 	
-	$REQUEST_URI = explode('?', $_SERVER['REQUEST_URI']);
-	$REQUEST_URI = explode('/', $REQUEST_URI[0]);
-	$base_dir = explode('/', str_replace("\\", "/",$GLOBALS['path']['base_dir']));
-	$base_root = array();
-	$tracker = false;
-	foreach($REQUEST_URI as $buri){
-		if($buri == $base_dir[count($base_dir) - 1]){
-			$base_root[] = $buri . '/';
-			$tracker = true;
-			break;
-		}else{
-			$base_root[] = $buri;
-			continue;
-		}
-	}
-	
-	if($tracker){
-		$GLOBALS['path']['base_root'] = implode('/',$base_root);
-	}else{
-		$GLOBALS['path']['base_root'] = '/';
-	}
+	$GLOBALS['path']['base_root'] = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
 	
 	/**
 	* Forlder Aliasis -- is to allow developers to create thier own folder names for
