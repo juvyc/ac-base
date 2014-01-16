@@ -20,7 +20,7 @@
 	
 	$_error_parameters = array(
 		'ADMIN_EMAIL_ADDR' => '',
-		'GENERIC_ERR_PAGE' => base_url . '_error_.php',
+		'GENERIC_ERR_PAGE' => $GLOBALS['path']['apps_path'] . '_error_.php',
 	);
 
 #//php_end\\;?>

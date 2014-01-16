@@ -71,7 +71,7 @@
 	
 	/**
 	* Call the app.a.php under the __apps folder where the framework core
-	* are integrated
+	* is integrated
 	*/
 	
 	require_once($GLOBALS['path']['apps_path'] . '/app.a.php');

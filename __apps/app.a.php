@@ -21,6 +21,6 @@
 	
 	$GLOBALS['system'] = new _CORE();
 	
-	echo $GLOBALS['system']->exec_app();
+	print($GLOBALS['system']->exec_app());
 	
 #//php_end\\;?>

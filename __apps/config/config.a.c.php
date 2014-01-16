@@ -56,13 +56,6 @@
 			*/
 			//'message' => 'Our system is currently in maintenance, will get it back soon. Thank you!',
 		);
-		
-		/**
-		* @route_extension -- this is last word after dot or (.) in the segment
-		* Ex. article.html
-		*/
-		var $route_extension = 'html';
-		
 	}
 
 #//php_end\\;?>
