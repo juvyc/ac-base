@@ -105,17 +105,6 @@
 		}
 		
 		/**
-		* For Photo Resize
-		*/
-		
-		public function ImageResize(){
-		
-			if(!class_exists('_Imageresize')) require_once(dirname(dirname(__FILE__)) . '/imageresize.c/imageresize.c.php');
-			
-			return new _Imageresize();
-		}
-		
-		/**
 		* MD5 encryption
 		*/
 		public function MD5($string)

@@ -1,10 +1,10 @@
 <?php
- class Helloworld_Mod extends Base_System
+ class Helloworld_Mod
  {
-	private $__table = 'user';
-	private $__primary_key = 'ID';
-	private $__fields = array(
-		'ID', 'username', 'password', 'params', 'date_added'
+	var $__table = 'sample';
+	var $__primary_key = 'id';
+	var $__fields = array(
+		'id', 'email'
 	);
 	
 	public function test()

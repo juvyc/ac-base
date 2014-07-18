@@ -4,7 +4,8 @@
 	* This the model controller and manager
 	* 
 	*/
-
+	
+	
 	class Base_Model{
 		var $globals;
 		var $app_mod;
@@ -31,6 +32,23 @@
 				$get_a_class = $this->app_mod . '_mod';
 				return new $get_a_class();
 			}
+		}
+		
+		public function forge($on = '')
+		{
+			
+			if($on != "" && $this->app_mod !=""){
+				require_once($this->globals['path']['apps_path'] . '/builder/' . $this->app_mod . '/model/' . $on .'_mod.php');
+				$get_a_class = $on . '_mod';
+			}else if($this->app_mod !=""){
+				require_once($this->globals['path']['apps_path'] . '/builder/' . $this->app_mod . '/model/' . $this->app_mod .'_mod.php');
+				$get_a_class = $this->app_mod . '_mod';
+			}
+			
+			if(!class_exists('Base_Model_Forge'))
+				require_once('base.c.mod.forge.php');
+			
+			return new Base_Model_Forge($get_a_class);
 		}
 	}
 

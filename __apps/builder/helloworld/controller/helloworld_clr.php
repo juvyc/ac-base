@@ -14,4 +14,10 @@
 	public function action_hi(){
 		return 1;
 	}
+	
+	public function action_modetest()
+	{
+		$modtest = $this->Ini()->Mod('helloworld')->forge();
+		echo var_dump($modtest->update());
+	}
  }
