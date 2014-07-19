@@ -16,7 +16,7 @@
 		
 		var $db_prefix;
 		
-		var $db_conn_handler;
+		protected $db_conn_handler;
 		
 		var $globals = array();
 		
