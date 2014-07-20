@@ -69,10 +69,10 @@
 				}
 			}
 			
-			$_SESSION = Array();
+			//$_SESSION = Array();
 			
 			foreach($listofNotToRemove as $listOET => $vOETVal){
-				$_SESSION[$listOET]	= $vOETVal;
+				if(isset($_SESSION[$listOET]))	$_SESSION[$listOET] = null;
 			}
 		}
 	}
