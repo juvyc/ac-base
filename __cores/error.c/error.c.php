@@ -37,10 +37,9 @@
 		for maintenance." The key idea is not to let any potentially malicious
 		user learn about the actual problem that had occurred.
 	  */
-	 
-	   header ("Location: ". $_error_parameters['GENERIC_ERR_PAGE'] . '/?referer=' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
-	  
-	  exit;
+	   header("HTTP/1.0 500 Internal Error");
+	   require_once(dirname(__FILE__) . '/error.view.c.php');
+	   exit;
 	}
 
 	  /*

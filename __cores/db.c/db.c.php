@@ -14,7 +14,7 @@
 		
 		protected $db_host;
 		
-		var $db_prefix;
+		public $db_prefix = null;
 		
 		protected $db_conn_handler;
 		
@@ -82,7 +82,7 @@
 		*/
 		public function exec()
 		{
-			return new _QUERY($this->db_conn_handler);
+			return new _QUERY($this->db_conn_handler, $this->db_prefix);
 		}
 		
 	}

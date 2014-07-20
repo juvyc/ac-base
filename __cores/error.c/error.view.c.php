@@ -1,22 +1,3 @@
-<?php #//php_start\\;	
-	
-	/**
-	* Starting session
-	*/
-	session_start();
-	
-	$s = empty($_SERVER["HTTPS"]) ? '' : ($_SERVER["HTTPS"] == "on") ? "s" : "";
-	
-	if(isset($_SESSION['_ERROR_']) && count($_SESSION['_ERROR_']) && $_SESSION['_ERROR_']['EXEC'] == "FALSE" && isset($_GET['referer']) && $_GET['referer'] != ""){		
-		header('location:http://' . $s . $_GET['referer']);
-	}else if(!isset($_SESSION['_ERROR_']) || !isset($_GET['referer'])){
-		header('location:../');
-	}
-	
-	$_SESSION['_ERROR_']['EXEC'] = 'FALSE';
-	
-#//php_end\\;?>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -37,16 +18,15 @@
 			<div class="syntaxPanel">
 				<div class="syntaxContainer">
 				<?php
-					$get_files_data = explode("\n", str_replace('<', '&lt;',file_get_contents($_SESSION['_ERROR_']['FILE'])));
-					$line = 1;
-					foreach($get_files_data as $codes_list){
-						
+					ini_set("auto_detect_line_endings", true);
+					$lines = file($_SESSION['_ERROR_']['FILE']);
+					foreach($lines as $line => $codes_list){
+						$line = $line + 1;
 						if($line == $_SESSION['_ERROR_']['LINE']){
-							echo '<pre>'. $line . '&nbsp;&nbsp;<span class="prior_hightlighted">' . $codes_list .'</span></pre>';
+							echo '<pre>'. $line . '&nbsp;&nbsp;<span class="prior_hightlighted">' . htmlspecialchars($codes_list) .'</span></pre>';
 						}else{
-							echo '<pre>'. $line . '&nbsp;&nbsp;' . $codes_list .'</pre>';
+							echo '<pre>'. $line . '&nbsp;&nbsp;' . htmlspecialchars($codes_list) .'</pre>';
 						}
-						$line++;
 					}
 				?>
 				</div>
