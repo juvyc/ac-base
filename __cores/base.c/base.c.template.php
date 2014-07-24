@@ -22,7 +22,7 @@
 			
 			$template_file="";
 			
-			$conf_theme = require_once $this->globals['path']['apps_path'] . '/config/theme.a.c.php';
+			$conf_theme = include $this->globals['path']['apps_path'] . '/config/theme.a.c.php';
 			
 			$tplFile = $conf_theme['common_tpl'];
 			
@@ -89,7 +89,7 @@
 			
 			$template_file="";
 			
-			$conf_theme = require_once $this->globals['path']['apps_path'] . '/config/theme.a.c.php';
+			$conf_theme = include $this->globals['path']['apps_path'] . '/config/theme.a.c.php';
 			
 			if($tplFile !=""){
 					

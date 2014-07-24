@@ -6,8 +6,8 @@
 	*/
 
 	class Base_View{
-		var $globals;
-		var $app_view;
+		protected $globals;
+		protected $app_view;
 		public function __construct($app_view="")
 		{
 			global $GLOBALS;
