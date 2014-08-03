@@ -48,7 +48,11 @@
 			Destroy all sessions
 		*/		
 		public function destroy($listS = ""){
-			$this->_unset($listS);
+			if(empty($listS)){
+				session_destroy();
+			}else{
+				$this->_unset($listS);
+			}
 		}
 		
 		/**

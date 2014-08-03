@@ -12,7 +12,7 @@
 		*
 		* else just remain it as it is right now or as default
 		*/
-		var $enable_database = true;
+		public $enable_database = true;
 		
 		/**
 		* If you have to execute the maitenance just changed it
@@ -25,7 +25,7 @@
 		* sub folder and copy your development index.php 
 		* into it. Ex. http://your_domain_name.com/_development
 		*/
-		var $system = array(
+		public $system = array(
 			/**
 			* @status_on - to put the current status of the system 
 			* -- NOTE: You need to uncomment the following parameters if you set the `status_on` to 'false'

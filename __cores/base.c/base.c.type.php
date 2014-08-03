@@ -18,6 +18,18 @@
 		}
 		
 		/**
+		* @Mailer
+		* Type: Method
+		* Desc: To call mailer class
+		*/
+		public function Mailer()
+		{
+			if(!class_exists('_Mailer')) require_once(dirname(dirname(__FILE__)) . '/mailer.c/mailer.c.php');
+			return new _Mailer();
+			
+		}
+		
+		/**
 		* for view manager
 		*/
 		public function View($app_view='')
