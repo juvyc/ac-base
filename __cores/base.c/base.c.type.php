@@ -143,7 +143,7 @@
 		/**
 		* Session controller
 		*/
-		public function session()
+		public function Session()
 		{
 			if(!class_exists('Base_Session')) require_once(dirname(dirname(__FILE__)) . '/session.c/session.c.php');
 			return new Base_Session();

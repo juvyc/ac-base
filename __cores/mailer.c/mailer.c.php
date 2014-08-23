@@ -67,6 +67,11 @@
 		}
 	}
 	
+	/**
+	* @prepare
+	* Type: Method
+	* Desc: Preparing all stuff added by the user
+	*/
 	private function prepare()
 	{
 		$this->setUpTo();
@@ -130,6 +135,11 @@
 		
 	}
 	
+	/**
+	* @send
+	* Type: Object
+	* Desc: To finally send email from prepare method
+	*/
 	public function send()
 	{
 		$this->prepare();
