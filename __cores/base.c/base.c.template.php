@@ -31,9 +31,8 @@
 				
 					
 					if(isset($_SESSION['_prepared_data_']) && is_array($_SESSION['_prepared_data_']) && count($_SESSION['_prepared_data_'])){
-						$prepared_data = array();
 						foreach($_SESSION['_prepared_data_'] as $PDKey => $PDValue){
-							$prepared_data[$PDKey] = $PDValue;
+							$$PDKey = $PDValue;
 						}
 					}
 					
@@ -83,11 +82,25 @@
 				ob_end_clean();
 				
 			}
+			$_SESSION['_prepared_data_'] = array();
 			return $template_file;
 		}
 		
-		public function set_template($tplFile =""){
-			
+		public function set_template($tplFile ="")
+		{
+			$the_template = $this->comm_template($tplFile);
+			$_SESSION['_prepared_data_'] = array();
+			return $the_template;
+		}
+		
+		public function get_template($tplFile ="")
+		{
+			$the_template = $this->comm_template($tplFile);
+			return $the_template;
+		}
+		
+		private function comm_template($tplFile ="")
+		{
 			$template_file="";
 			
 			$conf_theme = include $this->globals['path']['apps_path'] . '/config/theme.a.c.php';
@@ -95,9 +108,8 @@
 			if($tplFile !=""){
 					
 					if(isset($_SESSION['_prepared_data_']) && is_array($_SESSION['_prepared_data_']) && count($_SESSION['_prepared_data_'])){
-						$prepared_data = array();
 						foreach($_SESSION['_prepared_data_'] as $PDKey => $PDValue){
-							$prepared_data[$PDKey] = $PDValue;
+							$$PDKey = $PDValue;
 						}
 					}
 					
@@ -142,7 +154,6 @@
 				
 			}
 			return $template_file;
-			
 		}
 	}
 	

@@ -58,7 +58,7 @@
 					}
 				}else{
 					//Add new requested prepared data into the existing list
-					$_SESSION['_prepared_data_'][$param] = $value;
+					$_SESSION['_prepared_data_'][$params] = $value;
 				}
 			}else{
 				//Set prepared data if not exist
@@ -71,7 +71,7 @@
 					}
 				}else{
 					//Assign prepared data
-					$_SESSION['_prepared_data_'][$param] = $value;
+					$_SESSION['_prepared_data_'][$params] = $value;
 				}
 			}
 		}
@@ -124,7 +124,26 @@
 			//Calling the class @Base_Template
 			$template = new Base_Template();
 			//Calling @set_template method that output template
-			return $template->set_template($tplFile);
+			$get_template = $template->set_template($tplFile);
+			$this->clear_prepared_data();
+			return $get_template;
+		}
+		
+		/**
+		* @get_template (method), template passable to parameter
+		*/
+		public function get_template($tplFile ="")
+		{
+			/**
+			* No checking is required since setting of template is must and not should be empty
+				Better not to call this method when template is not neccessary in your controller
+			*/
+			require_once(dirname(__FILE__) . '/base.c.template.php');
+			//Calling the class @Base_Template
+			$template = new Base_Template();
+			//Calling @get_template method that output template
+			$get_template = $template->get_template($tplFile);
+			return $get_template;
 		}
 		
 		/**
@@ -133,7 +152,9 @@
 		public function use_prepared($param_prepared, $prepare_tpl){
 			require_once(dirname(__FILE__) . '/base.c.template.php');
 			$template = new Base_Template();
-			return $template->use_prepared($param_prepared, $prepare_tpl);
+			$get_template = $template->use_prepared($param_prepared, $prepare_tpl);
+			$this->clear_prepared_data();
+			return $get_template;
 		}
 	}
 
