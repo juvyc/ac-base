@@ -6,9 +6,10 @@
 	
 	class Base_Template
 	{
-		var $globals;
-		var $param;
-		var $value;
+		private $globals;
+		private $param;
+		private $value;
+		
 		public function __construct($param='', $value ='')
 		{
 			global $GLOBALS;
