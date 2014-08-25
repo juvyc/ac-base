@@ -97,7 +97,8 @@
 	{
 		$this->_select();
 		$getOne = $this->__stmt->limit(1)->run()->fetch_object();
-		return $getOne;
+		if($getOne)
+			return $getOne;
 	}
 	
 	public function fetch()
