@@ -18,7 +18,7 @@
 		
 		public $conn_type = 'mysql';
 		
-		public function __construct($dbclasstype = '')
+		public function __construct($dbclasstype = '', $dbtype = '')
 		{
 			global $GLOBALS;
 			
@@ -37,7 +37,8 @@
 			$this->db_prefix = $get_array_data_in_file['db_prefix'];
 			
 			if(strtolower($dbclasstype) == 'pdo'){
-				return $this->PDO();
+				//type whether pgsql or mysql
+				return $this->PDO($dbtype);
 			}else{
 				$this->connect();
 				
@@ -103,10 +104,10 @@
 			return new _QUERY($this->db_conn_handler, $this->db_prefix, $this->conn_type);
 		}
 		
-		private function PDO()
+		private function PDO($dbtype = 'mysql')
 		{
 			try{
-				return new PDO('mysql:host='. $this->db_host .';dbname='. $this->db_name, $this->db_username, $this->db_password);
+				return new PDO($dbtype.':host='. $this->db_host .';dbname='. $this->db_name, $this->db_username, $this->db_password);
 			}catch(PDOException $e){
 				trigger_error($e->getMessage(), E_USER_WARNING);
 			}
