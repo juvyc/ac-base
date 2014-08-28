@@ -1,9 +1,5 @@
 <?php #//php_start\\;	
 	
-	
-	
-	require_once('db.c.queries.php');
-	
 	class _DB
 	{
 		protected $db_name;
@@ -18,7 +14,9 @@
 		
 		protected $db_conn_handler;
 		
-		var $globals = array();
+		public $globals = array();
+		
+		public $conn_type = 'mysql';
 		
 		public function __construct()
 		{
@@ -40,6 +38,9 @@
 			
 			$this->connect();
 			
+			require_once('db.c.queries.controller.php');
+			require_once('db.c.queries.php');
+			
 		}
 		
 		/**
@@ -47,25 +48,35 @@
 		*/
 		public function connect()
 		{
-			/**
-			* Do connect to the database server
-			*/
-			if(!$this->db_conn_handler = @mysql_connect($this->db_host, $this->db_username, $this->db_password, true)) {
-				trigger_error("Unable to communicate to your database server!", E_USER_WARNING);
+			if(function_exists('mysqli_connect')){
+				$this->db_conn_handler = @mysqli_connect($this->db_host, $this->db_username, $this->db_password, $this->db_name);
+				if(mysqli_connect_errno()){
+					trigger_error("Connect failed: %s\n", mysqli_connect_error(), E_USER_WARNING);
+				}
+				
+				$this->conn_type = 'mysqli';
+				
+			}else{
+				/**
+				* Do connect to the database server
+				*/
+				if(!$this->db_conn_handler = @mysql_connect($this->db_host, $this->db_username, $this->db_password, true)) {
+					trigger_error("Unable to communicate to your database server!", E_USER_WARNING);
+				}
+				
+				/**
+				* Do select database name
+				*/
+				if(!mysql_select_db($this->db_name, $this->db_conn_handler)) {
+					trigger_error("Unable to select database, please make sure that your database is really exist on your server!", E_USER_WARNING);				
+				}
+				
+				/**
+				* Setting up the database characters
+				*/
+				mysql_query("SET NAMES utf8", $this->db_conn_handler);
+				mysql_query("SET CHARACTER SET utf8", $this->db_conn_handler);
 			}
-			
-			/**
-			* Do select database name
-			*/
-			if(!mysql_select_db($this->db_name, $this->db_conn_handler)) {
-				trigger_error("Unable to select database, please make sure that your database is really exist on your server!", E_USER_WARNING);				
-			}
-			
-			/**
-			* Setting up the database characters
-			*/
-			mysql_query("SET NAMES utf8", $this->db_conn_handler);
-			mysql_query("SET CHARACTER SET utf8", $this->db_conn_handler);
 		}
 		
 		/**
@@ -74,7 +85,10 @@
 		*/
 		public function close_conn()
 		{
-			mysql_close($this->db_conn_handler);
+			if($this->conn_type == 'mysqli')
+				mysqli_close($this->db_conn_handler);
+			else
+				mysql_close($this->db_conn_handler);
 		}
 		
 		/**
@@ -82,7 +96,16 @@
 		*/
 		public function exec()
 		{
-			return new _QUERY($this->db_conn_handler, $this->db_prefix);
+			return new _QUERY($this->db_conn_handler, $this->db_prefix, $this->conn_type);
+		}
+		
+		public function PDO()
+		{
+			try{
+				return new PDO('mysql:host='. $this->db_host .';dbname='. $this->db_name, $this->db_username, $this->db_password);
+			}catch(PDOException $e){
+				trigger_error($e->getMessage(), E_USER_WARNING);
+			}
 		}
 		
 	}
