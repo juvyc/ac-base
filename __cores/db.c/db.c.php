@@ -18,7 +18,7 @@
 		
 		public $conn_type = 'mysql';
 		
-		public function __construct()
+		public function __construct($dbclasstype = '')
 		{
 			global $GLOBALS;
 			
@@ -36,10 +36,14 @@
 			
 			$this->db_prefix = $get_array_data_in_file['db_prefix'];
 			
-			$this->connect();
-			
-			require_once('db.c.queries.controller.php');
-			require_once('db.c.queries.php');
+			if(strtolower($dbclasstype) == 'pdo'){
+				return $this->PDO();
+			}else{
+				$this->connect();
+				
+				require_once('db.c.queries.controller.php');
+				require_once('db.c.queries.php');
+			}
 			
 		}
 		
@@ -99,7 +103,7 @@
 			return new _QUERY($this->db_conn_handler, $this->db_prefix, $this->conn_type);
 		}
 		
-		public function PDO()
+		private function PDO()
 		{
 			try{
 				return new PDO('mysql:host='. $this->db_host .';dbname='. $this->db_name, $this->db_username, $this->db_password);
