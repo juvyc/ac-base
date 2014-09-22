@@ -54,7 +54,17 @@
 		* This is the request URI extractor
 		*/
 		public function ___uriD(){
-			$extracted_uri = explode(base_url, $_SERVER['REQUEST_URI']);
+			if(base_url == "/"){
+				$getOnlyClean = substr($_SERVER['REQUEST_URI'], 1, strlen($_SERVER['REQUEST_URI']));
+				$extracted_uri = array(
+					0 => '/',
+					1 => $getOnlyClean
+				);
+			}else{
+				$extracted_uri = explode(base_url, $_SERVER['REQUEST_URI']);
+			}
+				
+			//echo $extracted_uri[1];exit;
 			$get_s_extracted = isset($extracted_uri[1]) ? explode('?', $extracted_uri[1]) : array();
 			//$get_t_extracted = isset($get_s_extracted[0]) ? explode('/', $get_s_extracted[0]) : array();
 			if(isset($get_s_extracted[0])){
