@@ -75,6 +75,27 @@
 			}
 			return $get_t_extracted;
 		}
+		
+		public function get_the_rest_segments($start_segment = '')
+		{
+			$get_list_rests = array();
+			if($start_segment){
+				$start_rec = 0;
+				foreach($this->get_segments() as $item){
+					
+					if($start_rec)
+						$get_list_rests[] = $item;
+					
+					if($item == $start_segment && $start_rec < 1) $start_rec = 1;
+				}
+			}else{
+				foreach($this->get_segments() as $item){
+					$get_list_rests[] = $item;
+				}
+			}
+			
+			return $get_list_rests;
+		}
 	}
 	
 #//php_end\\;?>

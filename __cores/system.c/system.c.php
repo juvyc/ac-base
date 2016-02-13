@@ -152,6 +152,9 @@
 					
 					if($this->builder->fix_fn != ""){
 						if(count($this->builder->static_segments) && isset($this->builder->static_segments[1]) && method_exists($current, 'action_' . $this->builder->static_segments[1])){
+								
+								$_rest_segments = $this->Uri->get_the_rest_segments($this->builder->static_segments[1]);
+								
 								$output = "";
 								
 								/**
@@ -163,7 +166,7 @@
 								}
 								
 								$sub_method = array($current, 'action_' . $this->builder->static_segments[1]);
-								$output .= call_user_func_array($sub_method, array());
+								$output .= call_user_func_array($sub_method, $_rest_segments);
 								
 								/**
 								* detect the load after function
@@ -176,6 +179,8 @@
 								return $output;
 						}else if(!count($this->builder->static_segments) && method_exists($current, 'action_' . $this->builder->fix_fn)){
 								
+								$_rest_segments = $this->Uri->get_the_rest_segments($this->builder->fix_fn);
+								
 								$output = "";
 								
 								/**
@@ -187,7 +192,7 @@
 								}
 								
 								$sub_method = array($current, 'action_' . $this->builder->fix_fn);
-								$output .= call_user_func_array($sub_method, array());
+								$output .= call_user_func_array($sub_method, $_rest_segments);
 								
 								/**
 								* detect the load after function
@@ -263,12 +268,7 @@
 									* Check if _index (the builder common constructor is exist)
 									*/
 									if(method_exists($current, 'action_index')){
-										/**
-										* Assign the current requested segment to a variable 
-										* then pass it to the base class
-										*/
-										$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-										$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+										$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 										
 										$output = "";
 								
@@ -277,10 +277,10 @@
 										*/
 										if(method_exists($current, 'load_before')){
 											$sub_method_before = array($current, 'load_before');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
-										$output .= call_user_func_array($methodVariable, array(&$a, &$b));
+										$output .= call_user_func_array($methodVariable, $_rest_segments);
 										
 										
 										/**
@@ -288,7 +288,7 @@
 										*/
 										if(method_exists($current, 'load_after')){
 											$sub_method_before = array($current, 'load_after');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
 										return $output;
@@ -336,12 +336,8 @@
 							
 							$sub_method = array($current, 'action_' . $rr);
 							if(method_exists($current, 'action_' . $rr)){
-								/**
-								* if current requested segment is exist, then it call the method
-								*/
-								$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-								$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
-								//return call_user_func_array($sub_method, array(&$a, &$b));
+								
+								$_rest_segments = $this->Uri->get_the_rest_segments($rr);
 								
 								$output = "";
 								
@@ -350,18 +346,18 @@
 								*/
 								if(method_exists($current, 'load_before')){
 									$sub_method_before = array($current, 'load_before');
-									$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+									$output .= call_user_func_array($sub_method_before, array());
 								}
 								
 								
-								$output .= call_user_func_array($sub_method, array(&$a, &$b));
+								$output .= call_user_func_array($sub_method, $_rest_segments);
 								
 								/**
 								* detect the load after function
 								*/
 								if(method_exists($current, 'load_after')){
 									$sub_method_before = array($current, 'load_after');
-									$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+									$output .= call_user_func_array($sub_method_before, array());
 								}
 								
 								return $output;
@@ -382,12 +378,8 @@
 									$rr = str_replace('-', '_', $rr);
 									$sub_method = array($current, 'action_' . $rr);
 									if(method_exists($current, 'action_' . $rr)){
-										/**
-										* if current requested segment is exist, then it call the method
-										*/
-										$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-										$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
-										//return call_user_func_array($sub_method, array(&$a, &$b));
+										
+										$_rest_segments = $this->Uri->get_the_rest_segments($rr);
 										
 										$output = "";
 										
@@ -396,18 +388,18 @@
 										*/
 										if(method_exists($current, 'load_before')){
 											$sub_method_before = array($current, 'load_before');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
 										
-										$output .= call_user_func_array($sub_method, array(&$a, &$b));
+										$output .= call_user_func_array($sub_method, $_rest_segments);
 										
 										/**
 										* detect the load after function
 										*/
 										if(method_exists($current, 'load_after')){
 											$sub_method_before = array($current, 'load_after');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
 										return $output;
@@ -476,12 +468,9 @@
 											* Check if _index (the builder common constructor is exist)
 											*/
 											if(method_exists($current, 'action_index')){
-												/**
-												* Assign the current requested segment to a variable 
-												* then pass it to the base class
-												*/
-												$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-												$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+												
+												
+												$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 												
 												$output = "";
 										
@@ -490,10 +479,10 @@
 												*/
 												if(method_exists($current, 'load_before')){
 													$sub_method_before = array($current, 'load_before');
-													$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+													$output .= call_user_func_array($sub_method_before, array());
 												}
 												
-												$output .= call_user_func_array($methodVariable, array(&$a, &$b));
+												$output .= call_user_func_array($methodVariable, $_rest_segments);
 												
 												
 												/**
@@ -501,7 +490,7 @@
 												*/
 												if(method_exists($current, 'load_after')){
 													$sub_method_before = array($current, 'load_after');
-													$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+													$output .= call_user_func_array($sub_method_before, array());
 												}
 												
 												return $output;
@@ -550,12 +539,8 @@
 										* Check if _index (the builder common constructor is exist)
 										*/
 										if(method_exists($current, 'action_index')){
-											/**
-											* Assign the current requested segment to a variable 
-											* then pass it to the base class
-											*/
-											$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-											$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+											
+											$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 											
 											$output = "";
 									
@@ -564,10 +549,10 @@
 											*/
 											if(method_exists($current, 'load_before')){
 												$sub_method_before = array($current, 'load_before');
-												$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+												$output .= call_user_func_array($sub_method_before, array());
 											}
 											
-											$output .= call_user_func_array($methodVariable, array(&$a, &$b));
+											$output .= call_user_func_array($methodVariable, $_rest_segments);
 											
 											
 											/**
@@ -575,7 +560,7 @@
 											*/
 											if(method_exists($current, 'load_after')){
 												$sub_method_before = array($current, 'load_after');
-												$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+												$output .= call_user_func_array($sub_method_before, array());
 											}
 											
 											return $output;
@@ -605,11 +590,7 @@
 										if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
 											$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
 											
-											/**
-											* if current requested segment is exist, then it call the method
-											*/
-											$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-											$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+											$_rest_segments = $this->Uri->get_the_rest_segments($sub_ext_route);
 											
 											
 											$output = "";
@@ -619,18 +600,18 @@
 											*/
 											if(method_exists($sub_clr_class, 'load_before')){
 												$sub_method_before = array($sub_clr_class, 'load_before');
-												$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+												$output .= call_user_func_array($sub_method_before, array());
 											}
 											
 											
-											$output .= call_user_func_array($sub_method, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method, $_rest_segments);
 											
 											/**
 											* detect the load after function
 											*/
 											if(method_exists($sub_clr_class, 'load_after')){
 												$sub_method_before = array($sub_clr_class, 'load_after');
-												$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+												$output .= call_user_func_array($sub_method_before, array());
 											}
 											
 											return $output;
@@ -644,11 +625,7 @@
 													if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
 														$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
 														
-														/**
-														* if current requested segment is exist, then it call the method
-														*/
-														$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-														$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+														$_rest_segments = $this->Uri->get_the_rest_segments($sub_ext_route);
 														
 														
 														$output = "";
@@ -658,18 +635,18 @@
 														*/
 														if(method_exists($sub_clr_class, 'load_before')){
 															$sub_method_before = array($sub_clr_class, 'load_before');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														
-														$output .= call_user_func_array($sub_method, array(&$a, &$b));
+														$output .= call_user_func_array($sub_method, $_rest_segments);
 														
 														/**
 														* detect the load after function
 														*/
 														if(method_exists($sub_clr_class, 'load_after')){
 															$sub_method_before = array($sub_clr_class, 'load_after');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														return $output;
@@ -684,11 +661,7 @@
 																if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
 																	$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
 																	
-																	/**
-																	* if current requested segment is exist, then it call the method
-																	*/
-																	$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-																	$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																	$_rest_segments = $this->Uri->get_the_rest_segments($sub_ext_route);
 																	
 																	
 																	$output = "";
@@ -698,18 +671,18 @@
 																	*/
 																	if(method_exists($sub_clr_class, 'load_before')){
 																		$sub_method_before = array($sub_clr_class, 'load_before');
-																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																		$output .= call_user_func_array($sub_method_before, array());
 																	}
 																	
 																	
-																	$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																	$output .= call_user_func_array($sub_method, $_rest_segments);
 																	
 																	/**
 																	* detect the load after function
 																	*/
 																	if(method_exists($sub_clr_class, 'load_after')){
 																		$sub_method_before = array($sub_clr_class, 'load_after');
-																		$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																		$output .= call_user_func_array($sub_method_before, array());
 																	}
 																	
 																	return $output;
@@ -800,11 +773,7 @@
 															
 																$sub_method = array($sub_clr_class, 'action_index');
 																
-																/**
-																* if current requested segment is exist, then it call the method
-																*/
-																$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-																$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+																$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 																
 																
 																$output = "";
@@ -814,18 +783,18 @@
 																*/
 																if(method_exists($sub_clr_class, 'load_before')){
 																	$sub_method_before = array($sub_clr_class, 'load_before');
-																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	$output .= call_user_func_array($sub_method_before, array());
 																}
 																
 																
-																$output .= call_user_func_array($sub_method, array(&$a, &$b));
+																$output .= call_user_func_array($sub_method, $_rest_segments);
 																
 																/**
 																* detect the load after function
 																*/
 																if(method_exists($sub_clr_class, 'load_after')){
 																	$sub_method_before = array($sub_clr_class, 'load_after');
-																	$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+																	$output .= call_user_func_array($sub_method_before, array());
 																}
 																
 																return $output;
@@ -1011,11 +980,7 @@
 												}else if(method_exists($sub_clr_class, 'action_index')){
 														$sub_method = array($sub_clr_class, 'action_index');
 														
-														/**
-														* if current requested segment is exist, then it call the method
-														*/
-														$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-														$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+														$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 														
 														
 														$output = "";
@@ -1025,18 +990,18 @@
 														*/
 														if(method_exists($sub_clr_class, 'load_before')){
 															$sub_method_before = array($sub_clr_class, 'load_before');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														
-														$output .= call_user_func_array($sub_method, array(&$a, &$b));
+														$output .= call_user_func_array($sub_method, $_rest_segments);
 														
 														/**
 														* detect the load after function
 														*/
 														if(method_exists($sub_clr_class, 'load_after')){
 															$sub_method_before = array($sub_clr_class, 'load_after');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														return $output;
@@ -1185,11 +1150,7 @@
 									}else if(method_exists($sub_clr_class, 'action_index')){
 														$sub_method = array($sub_clr_class, 'action_index');
 														
-														/**
-														* if current requested segment is exist, then it call the method
-														*/
-														$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-														$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+														$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 														
 														
 														$output = "";
@@ -1199,18 +1160,18 @@
 														*/
 														if(method_exists($sub_clr_class, 'load_before')){
 															$sub_method_before = array($sub_clr_class, 'load_before');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														
-														$output .= call_user_func_array($sub_method, array(&$a, &$b));
+														$output .= call_user_func_array($sub_method, $_rest_segments);
 														
 														/**
 														* detect the load after function
 														*/
 														if(method_exists($sub_clr_class, 'load_after')){
 															$sub_method_before = array($sub_clr_class, 'load_after');
-															$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+															$output .= call_user_func_array($sub_method_before, array());
 														}
 														
 														return $output;
@@ -1330,12 +1291,7 @@
 									* Check if _index (the builder common constructor is exist)
 									*/
 									if(method_exists($current, 'action_index')){
-										/**
-										* Assign the current requested segment to a variable 
-										* then pass it to the base class
-										*/
-										$a = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(1) : 'root';
-										$b = ($this->Uri->get_segment(2)) ? $this->Uri->get_segment(2) : $this->Uri->get_segment(1);
+										$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 										
 										$output = "";
 								
@@ -1344,10 +1300,10 @@
 										*/
 										if(method_exists($current, 'load_before')){
 											$sub_method_before = array($current, 'load_before');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
-										$output .= call_user_func_array($methodVariable, array(&$a, &$b));
+										$output .= call_user_func_array($methodVariable, $_rest_segments);
 										
 										
 										/**
@@ -1355,7 +1311,7 @@
 										*/
 										if(method_exists($current, 'load_after')){
 											$sub_method_before = array($current, 'load_after');
-											$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+											$output .= call_user_func_array($sub_method_before, array());
 										}
 										
 										return $output;
@@ -1377,11 +1333,7 @@
 						}else{
 							
 							if(method_exists($current, 'action_index')){
-								/**
-								* call the default method
-								*/
-								$a = 'root';
-								$b = $this->Uri->get_segment(1);
+								$_rest_segments = $this->Uri->get_the_rest_segments($this->Uri->get_segment(1));
 								
 								$output = "";
 									
@@ -1390,10 +1342,10 @@
 								*/
 								if(method_exists($current, 'load_before')){
 									$sub_method_before = array($current, 'load_before');
-									$output .= call_user_func_array($sub_method_before, array(&$a, &$b));
+									$output .= call_user_func_array($sub_method_before, array());
 								}
 								
-								$output .= call_user_func_array($methodVariable, array(&$a, &$b));
+								$output .= call_user_func_array($methodVariable, $_rest_segments);
 								
 								/**
 								* detect the load after function
@@ -1401,7 +1353,7 @@
 								
 								if(method_exists($current, 'load_after')){
 									$sub_method_after = array($current, 'load_after');
-									$output .= call_user_func_array($sub_method_after, array(&$a, &$b));
+									$output .= call_user_func_array($sub_method_after, array());
 								}
 								
 								return $output;
