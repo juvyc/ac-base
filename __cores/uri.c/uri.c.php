@@ -80,6 +80,7 @@
 		{
 			$get_list_rests = array();
 			if($start_segment){
+				$start_segment = str_replace('_', '-', $start_segment);
 				$start_rec = 0;
 				foreach($this->get_segments() as $item){
 					
