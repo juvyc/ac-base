@@ -77,4 +77,4 @@
 	require_once($GLOBALS['path']['apps_path'] . '/app.a.php');
 		
 
-#//php_end\\;?>
+#//php_end\\;
