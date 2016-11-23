@@ -10,7 +10,7 @@
 		var $fix_fn;
 		var $ishome = false;
 		
-		public function _Builder(){
+		public function __construct(){
 			global $GLOBALS;
 			$this->globals = $GLOBALS;
 			$this->Uri = new _Uri();

@@ -11,7 +11,7 @@
 		private $inclr_base_segment;
 		private $inclr_end_segment;
 		
-		public function _SYSTEM()
+		public function __construct()
 		{
 			global $GLOBALS;
 			
