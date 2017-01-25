@@ -38,7 +38,12 @@
 			/**
 			* This is the object caller from the selected builder
  			*/
-			$route = ($reclass) ? $reclass . '_Clr' : $this->route . '_Clr';
+			
+			$route = str_replace('_', '', $reclass);
+			$route = str_replace('-', '_', $route);
+			$route = ucwords($route);
+			$this->route = ucwords($this->route);
+			echo $route = ($route) ? $route . '_Clr' : $this->route . '_Clr';
 			if (class_exists($route)) {
 				return new $route();
 			}
@@ -47,6 +52,7 @@
 		
 		public function _clean_segment($val)
 		{
+			$segmt = str_replace('_', '', $val);
 			$segmt = str_replace('-', '_', $val);
 			return $segmt;
 		}
