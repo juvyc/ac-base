@@ -43,7 +43,7 @@
 			$route = str_replace('-', '_', $route);
 			$route = ucwords($route);
 			$this->route = ucwords($this->route);
-			echo $route = ($route) ? $route . '_Clr' : $this->route . '_Clr';
+			$route = ($route) ? $route . '_Clr' : $this->route . '_Clr';
 			if (class_exists($route)) {
 				return new $route();
 			}
