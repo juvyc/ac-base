@@ -49,6 +49,8 @@
 		*/		
 		public function destroy($listS = ""){
 			if(empty($listS)){
+				if(session_id())
+					session_regenerate_id();
 				session_destroy();
 			}else{
 				$this->_unset($listS);

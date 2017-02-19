@@ -1,0 +1,237 @@
+[23-Nov-2016 07:04:58 Europe/Berlin] Methods with the same name as their class will not be constructors in a future version of PHP; A_Builder has a deprecated constructor: MAJOR PROBLEM at localhost: November 23, 2016, 7:04 am
+ errFile: C:\xampp\htdocs\frameworks\ac-base\__cores\builder.c\builder.c.php
+errLine: 3
+array(1) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(34) "C:\xampp\htdocs\frameworks\ac-base"
+    ["base_root"]=>
+    string(20) "/frameworks/ac-base/"
+    ["apps_path"]=>
+    string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+    ["files_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+    ["cores_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+    ["themes_path"]=>
+    string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+  }
+}
+
+[23-Nov-2016 07:05:48 Europe/Berlin] Methods with the same name as their class will not be constructors in a future version of PHP; _SYSTEM has a deprecated constructor: MAJOR PROBLEM at localhost: November 23, 2016, 7:05 am
+ errFile: C:\xampp\htdocs\frameworks\ac-base\__cores\system.c\system.c.php
+errLine: 3
+array(1) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(34) "C:\xampp\htdocs\frameworks\ac-base"
+    ["base_root"]=>
+    string(20) "/frameworks/ac-base/"
+    ["apps_path"]=>
+    string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+    ["files_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+    ["cores_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+    ["themes_path"]=>
+    string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+  }
+}
+
+[23-Nov-2016 07:07:32 Europe/Berlin] Missing argument 2 for Default_Clr::action_index(), called in C:\xampp\htdocs\frameworks\ac-base\__cores\system.c\system.c.php on line 1348 and defined: MAJOR PROBLEM at localhost: November 23, 2016, 7:07 am
+ errFile: C:\xampp\htdocs\frameworks\ac-base\__apps\builder\default\controller\default_clr.php
+errLine: 12
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(34) "C:\xampp\htdocs\frameworks\ac-base"
+    ["base_root"]=>
+    string(20) "/frameworks/ac-base/"
+    ["apps_path"]=>
+    string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+    ["files_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+    ["cores_path"]=>
+    string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+    ["themes_path"]=>
+    string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(4) "test"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (19) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(79) "mysqlnd 5.0.12-dev - 20150407 - $Id: 241ae00989d1995ffcbbf63d579943635faf9972 $"
+          ["client_version"]=>
+          int(50012)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.1.13-MariaDB"
+          ["server_version"]=>
+          int(50505)
+          ["stat"]=>
+          string(133) "Uptime: 3877  Threads: 1  Questions: 168  Slow queries: 0  Opens: 14  Flush tables: 1  Open tables: 25  Queries per second avg: 0.043"
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(4)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(34) "C:\xampp\htdocs\frameworks\ac-base"
+            ["base_root"]=>
+            string(20) "/frameworks/ac-base/"
+            ["apps_path"]=>
+            string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+            ["files_path"]=>
+            string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+            ["cores_path"]=>
+            string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+            ["themes_path"]=>
+            string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(34) "C:\xampp\htdocs\frameworks\ac-base"
+          ["base_root"]=>
+          string(20) "/frameworks/ac-base/"
+          ["apps_path"]=>
+          string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+          ["files_path"]=>
+          string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+          ["cores_path"]=>
+          string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+          ["themes_path"]=>
+          string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(34) "C:\xampp\htdocs\frameworks\ac-base"
+            ["base_root"]=>
+            string(20) "/frameworks/ac-base/"
+            ["apps_path"]=>
+            string(41) "C:\xampp\htdocs\frameworks\ac-base/__apps"
+            ["files_path"]=>
+            string(42) "C:\xampp\htdocs\frameworks\ac-base/__files"
+            ["cores_path"]=>
+            string(42) "C:\xampp\htdocs\frameworks\ac-base/__cores"
+            ["themes_path"]=>
+            string(43) "C:\xampp\htdocs\frameworks\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(7) "default"
+        ["bldr_file"]=>
+        string(84) "C:\xampp\htdocs\frameworks\ac-base/__apps/builder/default/controller/default_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+      ["last_segment"]=>
+      string(0) ""
+    }
+  }
+}
+
