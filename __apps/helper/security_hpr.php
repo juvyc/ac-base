@@ -14,6 +14,9 @@
 	 */
 	public function isUserLogin()
 	{
+		
+		$view = $this->Ini()->View();
+		
 		$session = $this->Ini()->session();
 		
 		//Check if requuired session variables for user logged in is exist
@@ -39,6 +42,7 @@
 			
 			if($stmt->num_rows() > 0){
 				$result = $stmt->fetch_object();
+				$view->set_prepared_data('_current_user_data', $result);
 				return $result;
 			}
 			
