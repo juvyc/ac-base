@@ -91,6 +91,7 @@
 			
 			$is_home = false;
 			
+			
 			if($this->Uri->get_segment(1) != ""){
 				/**
 				* If there's a first segment assign on the request
@@ -112,7 +113,6 @@
 				}else{
 					
 					$this->builder->route = $this->builder->_clean_segment($this->Uri->get_segment(1));
-					
 					$this->first_segment_request_manager();
 					if(!$this->builder->_caller()){
 						$this->builder->route = $this->static_routes['_root_'];
@@ -148,8 +148,6 @@
 				if($this->builder->_caller()){
 					$current = $this->builder->_caller();
 					$methodVariable = array($current, 'action_index');
-					
-					
 					if($this->builder->fix_fn != ""){
 						if(count($this->builder->static_segments) && isset($this->builder->static_segments[1]) && method_exists($current, 'action_' . $this->builder->static_segments[1])){
 								
@@ -307,6 +305,7 @@
 								}
 						}
 					}else{
+						
 						/**
 						* Check if the second segment is not null
 						*/
@@ -328,6 +327,7 @@
 						}
 						
 						if($rr != ""){
+							
 							/**
 							* if not null, call the method base on the request 
 							*/
@@ -335,6 +335,11 @@
 							$rr = str_replace('-', '_', $rr);
 							
 							$sub_method = array($current, 'action_' . $rr);
+							
+							//echo $this->inclr_end_segment . '/' . $this->inclr_base_segment . '<br/>';
+							//$this->builder->_checker($this->inclr_base_segment . '/' . $this->inclr_end_segment, $this->Uri->get_segment(2), true);
+							//exit;
+							
 							if(method_exists($current, 'action_' . $rr)){
 								
 								$_rest_segments = $this->Uri->get_the_rest_segments($rr);
@@ -1223,6 +1228,75 @@
 															
 														}
 									}
+								}
+								
+							
+							}else if($this->builder->_checker($this->Uri->get_segment(1) . '/' . $this->Uri->get_segment(2), $this->Uri->get_segment(2))){
+								require_once($this->builder->bldr_file);
+								$sub_clr_class = $this->builder->_caller(ucwords($this->Uri->get_segment(2)) . '-'. ucwords($this->Uri->get_segment(1)));
+								$sub_ext_route = ($this->Uri->get_segment(3)) ? $this->Uri->get_segment(3) : 'index';
+								
+								if(method_exists($sub_clr_class, 'action_' . $sub_ext_route)){
+									$sub_method = array($sub_clr_class, 'action_' . $sub_ext_route);
+									
+									$_rest_segments = $this->Uri->get_the_rest_segments($sub_ext_route);
+									
+									
+									$output = "";
+									
+									/**
+									* detect the load before function
+									*/
+									if(method_exists($sub_clr_class, 'load_before')){
+										$sub_method_before = array($sub_clr_class, 'load_before');
+										$output .= call_user_func_array($sub_method_before, array());
+									}
+									
+									
+									$output .= call_user_func_array($sub_method, $_rest_segments);
+									
+									/**
+									* detect the load after function
+									*/
+									if(method_exists($sub_clr_class, 'load_after')){
+										$sub_method_before = array($sub_clr_class, 'load_after');
+										$output .= call_user_func_array($sub_method_before, array());
+									}
+									
+									return $output;
+								}else if(method_exists($sub_clr_class, 'load_404')){
+									header("HTTP/1.0 404 Page not found!");
+									
+									$sub_method = array($sub_clr_class, 'load_404');
+									
+									$_rest_segments = $this->Uri->get_the_rest_segments('load_404');
+									
+									
+									$output = "";
+									
+									/**
+									* detect the load before function
+									*/
+									if(method_exists($sub_clr_class, 'load_before')){
+										$sub_method_before = array($sub_clr_class, 'load_before');
+										$output .= call_user_func_array($sub_method_before, array());
+									}
+									
+									
+									$output .= call_user_func_array($sub_method, $_rest_segments);
+									
+									/**
+									* detect the load after function
+									*/
+									if(method_exists($sub_clr_class, 'load_after')){
+										$sub_method_before = array($sub_clr_class, 'load_after');
+										$output .= call_user_func_array($sub_method_before, array());
+									}
+									
+									return $output;
+								}else{
+									header("HTTP/1.0 404 Page not found!");
+									return '';
 								}
 								
 								
