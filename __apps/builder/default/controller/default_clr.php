@@ -9,7 +9,7 @@
 			//echo $this->Uri->base();
 		}
 		
-		public function action_index($a = '', $b){
+		public function action_index($a = null, $b = null){
 			/**
 			* Call the model
 			*/

@@ -235,3 +235,153 @@ array(2) {
   }
 }
 
+[22-May-2018 11:30:26 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Default_Clr::action_index(), 1 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php:12
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Default_Clr->action_index('')
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(true)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php on line 12
+[22-May-2018 11:30:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Default_Clr::action_index(), 1 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php:12
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Default_Clr->action_index('')
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(true)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php on line 12
+[22-May-2018 11:30:43 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Default_Clr::action_index(), 1 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php:12
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Default_Clr->action_index('')
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(true)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\default\controller\default_clr.php on line 12
+[22-May-2018 11:30:58 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:31:11 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:31:17 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:31:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:32:18 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:32:22 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:32:30 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:32:46 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:33:01 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:34:01 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:34:08 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
+[22-May-2018 11:34:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Test_Clr::action_index(), 0 passed in C:\php-apps\ac-base\__cores\system.c\system.c.php on line 1348 and exactly 2 expected in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php:18
+Stack trace:
+#0 C:\php-apps\ac-base\__cores\system.c\system.c.php(1348): Test_Clr->action_index()
+#1 C:\php-apps\ac-base\__cores\system.c\system.c.php(136): _SYSTEM->_request_reader(false)
+#2 C:\php-apps\ac-base\__cores\system.c\system.c.php(78): _SYSTEM->_request_analyzer()
+#3 C:\php-apps\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\php-apps\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\php-apps\ac-base\index.php(77): require_once('C:\\php-apps\\ac-...')
+#6 {main}
+  thrown in C:\php-apps\ac-base\__apps\builder\test\controller\test_clr.php on line 18
