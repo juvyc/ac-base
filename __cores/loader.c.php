@@ -12,15 +12,10 @@
 	* is stored.
 	*/
 	require_once 'error.c/error.c.php';
-	
 	require_once 'uri.c/uri.c.php';
-	
 	require_once 'builder.c/builder.c.php';
-	
 	require_once 'autoload.c/autoload.c.php';
-	
 	require_once 'system.c/system.c.php';
-	
 	require_once 'core.c/core.c.php';
 	
 
