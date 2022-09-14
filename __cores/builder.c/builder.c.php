@@ -2,13 +2,13 @@
 	
 	class _Builder
 	{
-		var $globals;
-		var $route;
-		var $bldr_file;
-		var $Uri;
-		var $static_segments = array();
-		var $fix_fn;
-		var $ishome = false;
+		public $globals;
+		public $route;
+		public $bldr_file;
+		public $Uri;
+		public $static_segments = array();
+		public $fix_fn;
+		public $ishome = false;
 		
 		public function __construct(){
 			global $GLOBALS;
@@ -16,7 +16,7 @@
 			$this->Uri = new _Uri();
 			$this->CONFIG = new _CONFIG();
 		}
-		
+		 
 		public function _checker($reroute = false, $static = false, $_debug=false)
 		{
 			/**
@@ -24,6 +24,8 @@
 			*/
 			
 			$this->route = ($static) ? $static : $this->_clean_segment($this->route);
+			
+			//echo $this->route;exit;
 			
 			$file_router = ($reroute) ? $reroute : $this->route;
 			
@@ -45,17 +47,22 @@
 			
 			$route = str_replace('_', '', $reclass);
 			$route = str_replace('-', '_', $route);
-			$route = ucwords($route);
-			$this->route = ucwords($this->route);
+			
+			//$route = ucwords($route);
+			//$this->route = ucwords($this->route);
+			
 			$route = ($route) ? $route . '_Clr' : $this->route . '_Clr';
 			if($_debug){
 				echo $route;
 			}
 			
+			//return 1;
+			
+			//echo $route;exit;
+			
 			if (class_exists($route)) {
 				return new $route();
 			}
-			
 		}
 		
 		public function _clean_segment($val)

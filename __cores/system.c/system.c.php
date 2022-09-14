@@ -17,6 +17,7 @@
 			
 			$this->globals = $GLOBALS;
 			
+			 
 			$this->config = new _CONFIG();
 			
 			/**
@@ -145,8 +146,12 @@
 				
 				$this->last_segment = $this->builder->_clean_segment($this->Uri->get_segment(count($this->Uri->get_segments())));
 				
-				if($this->builder->_caller()){
-					$current = $this->builder->_caller();
+				//$current = $this->builder->_caller();
+				//$current->action_test();
+				//exit;
+				
+				if($current = $this->builder->_caller()){
+					//echo 1;exit;
 					$methodVariable = array($current, 'action_index');
 					if($this->builder->fix_fn != ""){
 						if(count($this->builder->static_segments) && isset($this->builder->static_segments[1]) && method_exists($current, 'action_' . $this->builder->static_segments[1])){

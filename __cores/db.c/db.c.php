@@ -54,7 +54,7 @@
 		public function connect()
 		{
 			if(function_exists('mysqli_connect')){
-				$this->db_conn_handler = @mysqli_connect($this->db_host, $this->db_username, $this->db_password, $this->db_name);
+				if(!$this->db_conn_handler) $this->db_conn_handler = @mysqli_connect($this->db_host, $this->db_username, $this->db_password, $this->db_name);
 				if(mysqli_connect_errno()){
 					trigger_error("Connect failed: %s\n", mysqli_connect_error(), E_USER_WARNING);
 				}
