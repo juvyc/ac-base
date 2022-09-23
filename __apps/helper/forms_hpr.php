@@ -178,7 +178,7 @@
 				 	 if($_field['type'] =='hidden'){
 				 	 	 $_html .= $this->field_constructor($_field, $props, $isView);
 				 	 }else{
-						 $_html .= '<div class="col-xs-'. $_field['gW'] .' frm-field">';
+						 $_html .= '<div class="col-'. ((!empty($_field['gW'])) ? $_field['gW'] : '12') .' frm-field">';
 							$_html .= $this->field_constructor($_field, $props, $isView);
 						 $_html .= '</div>';
 					 }
@@ -193,7 +193,7 @@
 			 	 $_html .= $this->field_constructor($field, $props, $isView);
 			 }else{
 				 $_html .= '<div class="'. $row_class .'" style="'. $row_style .'">';
-					$_html .= '<div class="col-xs-'. ((!empty($field['gW'])) ? $field['gW'] : '12') .' frm-field">';
+					$_html .= '<div class="col-'. ((!empty($field['gW'])) ? $field['gW'] : '12') .' frm-field">';
 						$_html .= $this->field_constructor($field, $props, $isView);
 					$_html .= '</div>';
 				 $_html .= '</div>';
@@ -231,7 +231,7 @@
 			$_html .= '<li class="tbl-row lst-tbl-view-head"><div class="row">';
 			foreach($fields as $fld => $props){
 				$addClass = (isset($props['hClass'])) ? $props['hClass'] : '';
-				$_html .= '<div class="col-xs-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. $props['label'] .'</div>';
+				$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. $props['label'] .'</div>';
 			}
 			$_html .= '</div></li>';
 			$icc = 0;
@@ -270,7 +270,7 @@
 							}
 							
 							$addClass = (isset($props['iClass'])) ? $props['iClass'] : '';
-							$_html .= '<div class="col-xs-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($_ival) .'</div>';
+							$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($_ival) .'</div>';
 						}
 						$_html .= '</div></li>';
 					}
@@ -285,9 +285,9 @@
 							$addClass = (isset($ffprop['iClass'])) ? $ffprop['iClass'] : '';
 							$ffval = (isset($ffprop['value'])) ? $ffprop['value'] : '';
 							if(!empty($ffprop['trace_value'])){
-								$_html .= '<div class="col-xs-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. ($ffprop['func']($$ffld)) .'</div>';
+								$_html .= '<div class="col-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. ($ffprop['func']($$ffld)) .'</div>';
 							}else{
-								$_html .= '<div class="col-xs-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. $ffval .'</div>';
+								$_html .= '<div class="col-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. $ffval .'</div>';
 							}
 						}
 						$_html .= '</div></li>';
@@ -302,9 +302,9 @@
 						foreach($fields as $fld => $props){
 							$addClass = (isset($props['addItemClass'])) ? $props['addItemClass'] : '';
 							if(isset($props['func'])){
-								$_html .= '<div class="col-xs-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($props['func']($item)) .'</div>';
+								$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($props['func']($item)) .'</div>';
 							}else{
-								$_html .= '<div class="col-xs-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. (isset($item[$fld]) ? $item[$fld] : '') .'</div>';
+								$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. (isset($item[$fld]) ? $item[$fld] : '') .'</div>';
 							}
 						}
 						$_html .= '</div></li>';

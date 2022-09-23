@@ -8,8 +8,13 @@
 		*		you can acess as '$assets_js' the same in css
 		*/
 		'common_assets' => array(
-			'css' => array(),
-			'js' => array(),
+			'css' => array(
+				'__assets/css/bootstrap.min.css',
+				'__assets/css/main.css',
+			),
+			'js' => array(
+				'__assets/js/bootstrap.min.js',
+			),
 		),
 		
 		'common_tpl' => array(
