@@ -13,19 +13,119 @@
 			$this->data['full_name'] = 'Juvy Cagape';
 			$this->data['email'] = 'cagapejuvy@gmail.com';
 			
+			$this->common_func = $this->Ini()->Mod('common');
+			
 		}
 		
-		public function action_index($a = '', $b){
-			/**
-			* Call the model
-			*/
+		public function action_index(){
+			$form = $this->Ini()->Helper('forms')->load()->call();
+			//$mod_data = $this->Ini()->Mod('common')->load('data')->call();
+			//$mod_metadata = $this->Ini()->Mod('common')->load('metadata')->call();
 			
+			$arrgs = array(
+				array(
+					'type' => 'text',
+					'name' => 'first_name',
+					'label' => 'First Name',
+				),
+				
+				array(
+					'type' => 'text',
+					'name' => 'last_name',
+					'label' => 'Last Name',
+				),
+				
+				array(
+					'type' => 'text',
+					'name' => 'phone',
+					'label' => 'Phone Number',
+				),
+				
+				array(
+					'type' => 'text',
+					'name' => 'email',
+					'label' => 'Email Address',
+				),
+				
+				array(
+					'type' => 'submit',
+					'value' => 'Save',
+					'class' => 'btn btn-primary',
+				)
+			);
+			
+			//INSERTING FORM FIELDS TO DATABASE
+			if(count($this->Ini()->Action()->POST()->params)){
+				$data_id = $this->Ini()->DB()->exec()
+							->insert('data')
+								->data(array(
+									'type' => 'lead',
+									'datetime_created' =>  date('Y-m-d H:i:s'),
+									'created_by' => 1,
+									'status' => 'active'
+								))
+							->run()
+				->insert_id();
+				
+				//echo $data_id;
+				
+				
+				if($data_id > 0){
+					
+					//print_r($this->Ini()->Action()->POST()->params);
+					
+					foreach($this->Ini()->Action()->POST()->params as $_fldName => $_fldValue){
+						$mdata_id = $this->Ini()->DB()->exec()
+									->insert('meta_data')
+										->data(array(
+											'data_id' => $data_id,
+											'meta_key' => $_fldName,
+											'meta_value' => $_fldValue,
+										))
+									->run()
+						->insert_id();
+					}
+				}
+			}
+			
+			
+			$db = $this->Ini()->DB()->exec();
+			
+			$stmt = $db
+					->select(array(
+						'd.*', 
+						'md1.meta_value AS first_name',
+						'md2.meta_value AS last_name',
+						'md3.meta_value AS email',
+					))
+					->from('data', 'd')
+					
+						->inner_join('meta_data', 'md1')
+							->on('md1.data_id', 'd.id')
+								->on("AND md1.meta_key = 'first_name'")
+								
+						->inner_join('meta_data', 'md2')
+							->on('md2.data_id', 'd.id')
+								->on("AND md2.meta_key = 'last_name'")
+								
+						->inner_join('meta_data', 'md3')
+							->on('md3.data_id', 'd.id')
+								->on("AND md3.meta_key = 'email'")
+							
+					->where(array(
+						'd.type' => 'lead'
+					))
+					->run();
+			
+			$this->data['_data_results'] = $stmt;
+			$this->data['_form_fields'] = $form->fields_builder($arrgs);
 			
 			return $this
 					->Ini()
-						->Mod('test')
-							->load()
-								->home_mod();
+						->View()
+							->set_data($this->data)
+								->use_prepared('content', 'default/testform');
+			
 		}
 		
 		public function _affdata()
@@ -43,6 +143,9 @@
 			$this->data['post'] = $requestmethod->post();
 			
 			$this->data['files'] = $requestmethod->files();
+			
+			
+			
 			
 		}
 		

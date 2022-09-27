@@ -2349,3 +2349,1667 @@ Stack trace:
 #5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
 #6 {main}
   thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:22 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:22 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:28 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:28 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:33 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:33 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:40 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:40 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:09:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:11 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:11 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:12 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:12 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:13 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:14 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:15 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:15 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:16 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:17 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:18 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:18 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:19 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[23-Sep-2022 11:38:19 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[26-Sep-2022 12:43:27 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[26-Sep-2022 12:43:27 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 10:42:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 10:42:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 10:42:09 Europe/Berlin] Required parameter $b follows optional parameter $a: MAJOR PROBLEM at localhost: September 27, 2022, 10:42 am
+ errFile: C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php
+errLine: 18
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(19) "C:\apps\php\ac-base"
+    ["base_root"]=>
+    string(9) "/ac-base/"
+    ["apps_path"]=>
+    string(26) "C:\apps\php\ac-base/__apps"
+    ["files_path"]=>
+    string(27) "C:\apps\php\ac-base/__files"
+    ["cores_path"]=>
+    string(27) "C:\apps\php\ac-base/__cores"
+    ["themes_path"]=>
+    string(28) "C:\apps\php\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (8) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(4) "test"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (18) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(13) "mysqlnd 8.0.8"
+          ["client_version"]=>
+          int(80008)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.4.20-MariaDB"
+          ["server_version"]=>
+          int(100420)
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(2118)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(19) "C:\apps\php\ac-base"
+          ["base_root"]=>
+          string(9) "/ac-base/"
+          ["apps_path"]=>
+          string(26) "C:\apps\php\ac-base/__apps"
+          ["files_path"]=>
+          string(27) "C:\apps\php\ac-base/__files"
+          ["cores_path"]=>
+          string(27) "C:\apps\php\ac-base/__cores"
+          ["themes_path"]=>
+          string(28) "C:\apps\php\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(4) "test"
+        ["bldr_file"]=>
+        string(63) "C:\apps\php\ac-base/__apps/builder/test/controller/test_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+    }
+  }
+}
+
+[27-Sep-2022 11:00:18 Europe/Berlin] Undefined variable $_form_fields: MAJOR PROBLEM at localhost: September 27, 2022, 11:00 am
+ errFile: C:\apps\php\ac-base\__themes\default\testform_tpl.php
+errLine: 3
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(19) "C:\apps\php\ac-base"
+    ["base_root"]=>
+    string(9) "/ac-base/"
+    ["apps_path"]=>
+    string(26) "C:\apps\php\ac-base/__apps"
+    ["files_path"]=>
+    string(27) "C:\apps\php\ac-base/__files"
+    ["cores_path"]=>
+    string(27) "C:\apps\php\ac-base/__cores"
+    ["themes_path"]=>
+    string(28) "C:\apps\php\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(10) "cmr-dynadb"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (18) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(13) "mysqlnd 8.0.8"
+          ["client_version"]=>
+          int(80008)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.4.20-MariaDB"
+          ["server_version"]=>
+          int(100420)
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(2186)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(19) "C:\apps\php\ac-base"
+          ["base_root"]=>
+          string(9) "/ac-base/"
+          ["apps_path"]=>
+          string(26) "C:\apps\php\ac-base/__apps"
+          ["files_path"]=>
+          string(27) "C:\apps\php\ac-base/__files"
+          ["cores_path"]=>
+          string(27) "C:\apps\php\ac-base/__cores"
+          ["themes_path"]=>
+          string(28) "C:\apps\php\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(4) "test"
+        ["bldr_file"]=>
+        string(63) "C:\apps\php\ac-base/__apps/builder/test/controller/test_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+      ["last_segment"]=>
+      string(4) "test"
+    }
+  }
+}
+
+[27-Sep-2022 11:00:30 Europe/Berlin] Undefined variable $customers_lists: MAJOR PROBLEM at localhost: September 27, 2022, 11:00 am
+ errFile: C:\apps\php\ac-base\__themes\default\testform_tpl.php
+errLine: 17
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(19) "C:\apps\php\ac-base"
+    ["base_root"]=>
+    string(9) "/ac-base/"
+    ["apps_path"]=>
+    string(26) "C:\apps\php\ac-base/__apps"
+    ["files_path"]=>
+    string(27) "C:\apps\php\ac-base/__files"
+    ["cores_path"]=>
+    string(27) "C:\apps\php\ac-base/__cores"
+    ["themes_path"]=>
+    string(28) "C:\apps\php\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(10) "cmr-dynadb"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (18) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(13) "mysqlnd 8.0.8"
+          ["client_version"]=>
+          int(80008)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.4.20-MariaDB"
+          ["server_version"]=>
+          int(100420)
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(2187)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(19) "C:\apps\php\ac-base"
+          ["base_root"]=>
+          string(9) "/ac-base/"
+          ["apps_path"]=>
+          string(26) "C:\apps\php\ac-base/__apps"
+          ["files_path"]=>
+          string(27) "C:\apps\php\ac-base/__files"
+          ["cores_path"]=>
+          string(27) "C:\apps\php\ac-base/__cores"
+          ["themes_path"]=>
+          string(28) "C:\apps\php\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(4) "test"
+        ["bldr_file"]=>
+        string(63) "C:\apps\php\ac-base/__apps/builder/test/controller/test_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+      ["last_segment"]=>
+      string(4) "test"
+    }
+  }
+}
+
+[27-Sep-2022 11:01:48 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:01:48 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:01:49 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:01:49 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:01:52 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:01:52 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:05 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:05 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:07 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:07 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:09 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:09 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:42 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "array", expecting ")" in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php on line 50
+[27-Sep-2022 11:14:47 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:47 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:50 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:14:50 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:15:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Data_Mod::forge() in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php:59
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1427): Test_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(false)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php on line 59
+[27-Sep-2022 11:16:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Data_Mod::call() in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php:22
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1427): Test_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(false)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php on line 22
+[27-Sep-2022 11:17:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method Data_Mod::call() in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php:22
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1427): Test_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(false)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php on line 22
+[27-Sep-2022 11:22:40 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:22:40 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:23:31 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:23:31 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:23:48 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:23:48 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:24:58 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:24:58 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:30:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method _QUERY_CONTROLLER::and_where() in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php:103
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1427): Test_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(false)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\test\controller\test_clr.php on line 103
+[27-Sep-2022 11:33:32 Europe/Berlin] SELECT d.*,md1.meta_value AS first_name,md2.meta_value AS last_name  FROM `data` AS d  INNER JOIN `meta_data` AS md1  ON md1.data_id = d.id AND md1.meta_key = 'first_name'  INNER JOIN `meta_data` AS md2  ON md2.data_id = d.id AND md2.meta_key = 'last_name'  WHERE  type   = 'lead'  OR  email  LIKE 'c%': MAJOR PROBLEM at localhost: September 27, 2022, 11:33 am
+ errFile: C:\apps\php\ac-base\__cores\db.c\db.c.queries.controller.php
+errLine: 700
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(19) "C:\apps\php\ac-base"
+    ["base_root"]=>
+    string(9) "/ac-base/"
+    ["apps_path"]=>
+    string(26) "C:\apps\php\ac-base/__apps"
+    ["files_path"]=>
+    string(27) "C:\apps\php\ac-base/__files"
+    ["cores_path"]=>
+    string(27) "C:\apps\php\ac-base/__cores"
+    ["themes_path"]=>
+    string(28) "C:\apps\php\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(10) "cmr-dynadb"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (18) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(13) "mysqlnd 8.0.8"
+          ["client_version"]=>
+          int(80008)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.4.20-MariaDB"
+          ["server_version"]=>
+          int(100420)
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(2365)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(19) "C:\apps\php\ac-base"
+          ["base_root"]=>
+          string(9) "/ac-base/"
+          ["apps_path"]=>
+          string(26) "C:\apps\php\ac-base/__apps"
+          ["files_path"]=>
+          string(27) "C:\apps\php\ac-base/__files"
+          ["cores_path"]=>
+          string(27) "C:\apps\php\ac-base/__cores"
+          ["themes_path"]=>
+          string(28) "C:\apps\php\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(4) "test"
+        ["bldr_file"]=>
+        string(63) "C:\apps\php\ac-base/__apps/builder/test/controller/test_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+      ["last_segment"]=>
+      string(4) "test"
+    }
+  }
+}
+
+[27-Sep-2022 11:34:16 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:34:16 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:35:54 Europe/Berlin] Undefined variable $_row: MAJOR PROBLEM at localhost: September 27, 2022, 11:35 am
+ errFile: C:\apps\php\ac-base\__themes\default\testform_tpl.php
+errLine: 14
+array(2) {
+  ["path"]=>
+  array(6) {
+    ["base_dir"]=>
+    string(19) "C:\apps\php\ac-base"
+    ["base_root"]=>
+    string(9) "/ac-base/"
+    ["apps_path"]=>
+    string(26) "C:\apps\php\ac-base/__apps"
+    ["files_path"]=>
+    string(27) "C:\apps\php\ac-base/__files"
+    ["cores_path"]=>
+    string(27) "C:\apps\php\ac-base/__cores"
+    ["themes_path"]=>
+    string(28) "C:\apps\php\ac-base/__themes"
+  }
+  ["system"]=>
+  object(_CORE)#1 (1) {
+    ["event_handler":"_CORE":private]=>
+    object(_SYSTEM)#2 (9) {
+      ["DB":"_SYSTEM":private]=>
+      object(_DB)#4 (8) {
+        ["db_name":protected]=>
+        string(10) "cmr-dynadb"
+        ["db_username":protected]=>
+        string(4) "root"
+        ["db_password":protected]=>
+        string(0) ""
+        ["db_host":protected]=>
+        string(9) "localhost"
+        ["db_prefix"]=>
+        string(0) ""
+        ["db_conn_handler":protected]=>
+        object(mysqli)#5 (18) {
+          ["affected_rows"]=>
+          int(0)
+          ["client_info"]=>
+          string(13) "mysqlnd 8.0.8"
+          ["client_version"]=>
+          int(80008)
+          ["connect_errno"]=>
+          int(0)
+          ["connect_error"]=>
+          NULL
+          ["errno"]=>
+          int(0)
+          ["error"]=>
+          string(0) ""
+          ["error_list"]=>
+          array(0) {
+          }
+          ["field_count"]=>
+          int(0)
+          ["host_info"]=>
+          string(20) "localhost via TCP/IP"
+          ["info"]=>
+          NULL
+          ["insert_id"]=>
+          int(0)
+          ["server_info"]=>
+          string(21) "5.5.5-10.4.20-MariaDB"
+          ["server_version"]=>
+          int(100420)
+          ["sqlstate"]=>
+          string(5) "00000"
+          ["protocol_version"]=>
+          int(10)
+          ["thread_id"]=>
+          int(2371)
+          ["warning_count"]=>
+          int(0)
+        }
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["conn_type"]=>
+        string(6) "mysqli"
+      }
+      ["Uri":"_SYSTEM":private]=>
+      object(_Uri)#6 (0) {
+      }
+      ["config":"_SYSTEM":private]=>
+      object(_CONFIG)#3 (2) {
+        ["enable_database"]=>
+        bool(true)
+        ["system"]=>
+        array(1) {
+          ["status_on"]=>
+          bool(false)
+        }
+      }
+      ["globals":"_SYSTEM":private]=>
+      array(1) {
+        ["path"]=>
+        array(6) {
+          ["base_dir"]=>
+          string(19) "C:\apps\php\ac-base"
+          ["base_root"]=>
+          string(9) "/ac-base/"
+          ["apps_path"]=>
+          string(26) "C:\apps\php\ac-base/__apps"
+          ["files_path"]=>
+          string(27) "C:\apps\php\ac-base/__files"
+          ["cores_path"]=>
+          string(27) "C:\apps\php\ac-base/__cores"
+          ["themes_path"]=>
+          string(28) "C:\apps\php\ac-base/__themes"
+        }
+      }
+      ["static_routes":"_SYSTEM":private]=>
+      array(4) {
+        ["_root_"]=>
+        string(7) "default"
+        ["_404_"]=>
+        string(5) "my404"
+        ["dancers2"]=>
+        string(13) "helloworld/hi"
+        ["helloworld"]=>
+        string(13) "helloworld/hi"
+      }
+      ["builder":"_SYSTEM":private]=>
+      object(_Builder)#7 (8) {
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["route"]=>
+        string(4) "test"
+        ["bldr_file"]=>
+        string(63) "C:\apps\php\ac-base/__apps/builder/test/controller/test_clr.php"
+        ["Uri"]=>
+        object(_Uri)#8 (0) {
+        }
+        ["static_segments"]=>
+        array(0) {
+        }
+        ["fix_fn"]=>
+        NULL
+        ["ishome"]=>
+        bool(false)
+        ["CONFIG"]=>
+        object(_CONFIG)#9 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+      }
+      ["inclr_base_segment":"_SYSTEM":private]=>
+      NULL
+      ["inclr_end_segment":"_SYSTEM":private]=>
+      NULL
+      ["last_segment"]=>
+      string(4) "test"
+    }
+  }
+}
+
+[27-Sep-2022 11:36:10 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:36:10 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:36:39 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:36:39 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:44:34 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
+[27-Sep-2022 11:44:34 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function my404_Clr::action_index(), 0 passed in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 1385 and exactly 2 expected in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php:5
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\system.c\system.c.php(1385): my404_Clr->action_index()
+#1 C:\apps\php\ac-base\__cores\system.c\system.c.php(137): _SYSTEM->_request_reader(true)
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(79): _SYSTEM->_request_analyzer()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#4 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#5 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#6 {main}
+  thrown in C:\apps\php\ac-base\__apps\builder\my404\controller\my404_clr.php on line 5
