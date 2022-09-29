@@ -19,8 +19,10 @@
 		
 		public function action_index(){
 			$form = $this->Ini()->Helper('forms')->load()->call();
-			//$mod_data = $this->Ini()->Mod('common')->load('data')->call();
-			//$mod_metadata = $this->Ini()->Mod('common')->load('metadata')->call();
+			$mod_data = $this->Ini()->Mod('common')->load('data');
+			$mod_metadata = $this->Ini()->Mod('common')->load('metadata');
+			
+			//print_r($mod_metadata->_results);
 			
 			$arrgs = array(
 				array(
@@ -54,71 +56,33 @@
 				)
 			);
 			
-			//INSERTING FORM FIELDS TO DATABASE
-			if(count($this->Ini()->Action()->POST()->params)){
-				$data_id = $this->Ini()->DB()->exec()
-							->insert('data')
-								->data(array(
-									'type' => 'lead',
-									'datetime_created' =>  date('Y-m-d H:i:s'),
-									'created_by' => 1,
-									'status' => 'active'
-								))
-							->run()
-				->insert_id();
+			
+			$this->data['_data_results'] = $mod_data->getResultsByType('lead', 
+				array(
+					'first_name',
+					'last_name',
+					'phone',
+					'email',
+				)
+			);
+			
+			$_form_data = [];
+			
+			if($cid = $this->Ini()->Action()->GET()->param('cid')){
+				if(count($this->Ini()->Action()->POST()->params)){
+					$mod_metadata->updateBatchByParentData($cid, $this->Ini()->Action()->POST()->params);
+				}
 				
-				//echo $data_id;
-				
-				
-				if($data_id > 0){
-					
-					//print_r($this->Ini()->Action()->POST()->params);
-					
-					foreach($this->Ini()->Action()->POST()->params as $_fldName => $_fldValue){
-						$mdata_id = $this->Ini()->DB()->exec()
-									->insert('meta_data')
-										->data(array(
-											'data_id' => $data_id,
-											'meta_key' => $_fldName,
-											'meta_value' => $_fldValue,
-										))
-									->run()
-						->insert_id();
-					}
+				$_form_data = $mod_metadata->getByParentData($cid);
+			}else{
+				if(count($this->Ini()->Action()->POST()->params)){
+					$mod_data->insertNewData('lead', $this->Ini()->Action()->POST()->params);
 				}
 			}
 			
-			
-			$db = $this->Ini()->DB()->exec();
-			
-			$stmt = $db
-					->select(array(
-						'd.*', 
-						'md1.meta_value AS first_name',
-						'md2.meta_value AS last_name',
-						'md3.meta_value AS email',
-					))
-					->from('data', 'd')
-					
-						->inner_join('meta_data', 'md1')
-							->on('md1.data_id', 'd.id')
-								->on("AND md1.meta_key = 'first_name'")
-								
-						->inner_join('meta_data', 'md2')
-							->on('md2.data_id', 'd.id')
-								->on("AND md2.meta_key = 'last_name'")
-								
-						->inner_join('meta_data', 'md3')
-							->on('md3.data_id', 'd.id')
-								->on("AND md3.meta_key = 'email'")
-							
-					->where(array(
-						'd.type' => 'lead'
-					))
-					->run();
-			
-			$this->data['_data_results'] = $stmt;
-			$this->data['_form_fields'] = $form->fields_builder($arrgs);
+			$this->data['_form_fields'] = $form->fields_builder($arrgs, array(
+				'group_values' => $_form_data
+			));
 			
 			return $this
 					->Ini()
