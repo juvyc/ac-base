@@ -25,6 +25,13 @@
 			//print_r($mod_metadata->_results);
 			
 			$arrgs = array(
+				
+				array(
+					'type' => 'hidden',
+					'name' => '__form_segnature',
+					'value' => 'dsfdsfdsfsdfsdf',
+				),
+				
 				array(
 					'type' => 'text',
 					'name' => 'first_name',
@@ -68,15 +75,31 @@
 			
 			$_form_data = [];
 			
-			if($cid = $this->Ini()->Action()->GET()->param('cid')){
-				if(count($this->Ini()->Action()->POST()->params)){
-					$mod_metadata->updateBatchByParentData($cid, $this->Ini()->Action()->POST()->params);
+			if($cid = $this->Ini()->Action()->GET()->param('cid')){ //check if cid si present
+				if(count($this->Ini()->Action()->POST()->params)){ //check if form is submitted
+					/**
+					@ $cid => data id
+					@ 2nd param => form post fields
+					*/
+					
+					$_posts_params = $this->Ini()->Action()->POST()->params;
+					//unset($_posts_params['__form_segnature']);
+					$mod_metadata->updateBatchByParentData($cid, $_posts_params);
 				}
 				
+				//Retrieve data by data id
 				$_form_data = $mod_metadata->getByParentData($cid);
-			}else{
-				if(count($this->Ini()->Action()->POST()->params)){
-					$mod_data->insertNewData('lead', $this->Ini()->Action()->POST()->params);
+			}else{ // if cid is not present do the saving below 
+				if(count($this->Ini()->Action()->POST()->params)){ //check if form is submitted
+					
+					/**
+					@param1 => type of data i.e lead, company, deal
+					@param2 => form post fields
+					*/
+					$_posts_params = $this->Ini()->Action()->POST()->params;
+					//unset($_posts_params['__form_segnature']);
+					
+					$mod_data->insertNewData('lead', $_posts_params);
 				}
 			}
 			
