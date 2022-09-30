@@ -19,7 +19,7 @@
 	);
 	
 	
-	public function getResultsByType($_type = '', $_fields=array(), $_where=array(), $limit = '20')
+	public function getResultsByType($_type = '', $_fields=array(), $_where=null, $limit = '20')
 	{
 		$dbconn = $this->Ini()->DB();
 		$_dbq = $dbconn->exec();
@@ -47,8 +47,12 @@
 		
 		if($_type) $qstmt = $qstmt->where('d.type', $_type);
 		
-		if(count($_where)){
+		if($_where){
 			$qstmt = $qstmt->where($_where);
+		}
+		
+		if($limit != -1){
+			$qstmt = $qstmt->limit($limit);
 		}
 		
 		$qstmt = $qstmt->run();

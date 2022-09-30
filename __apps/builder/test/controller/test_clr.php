@@ -70,6 +70,8 @@
 					'last_name',
 					'phone',
 					'email',
+				), array(
+					'status' => ['!=' => 'deleted']
 				)
 			);
 			
