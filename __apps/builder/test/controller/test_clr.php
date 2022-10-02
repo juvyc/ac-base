@@ -63,7 +63,7 @@
 				)
 			);
 			
-			
+			$status = $this->Ini()->Action()->GET()->param('status');
 			$this->data['_data_results'] = $mod_data->getResultsByType('lead', 
 				array(
 					'first_name',
@@ -71,7 +71,7 @@
 					'phone',
 					'email',
 				), array(
-					'status' => ['!=' => 'deleted']
+					'status' => $status ? $status : ['!=' => 'deleted']
 				)
 			);
 			

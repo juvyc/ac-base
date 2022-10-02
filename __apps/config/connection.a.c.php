@@ -1,7 +1,7 @@
 <?php #//php_start\\;
 
 	return array(
-		'db_name' => 'cmr-dynadb',
+		'db_name' => 'crm_hr',
 		'db_username' => 'root',
 		'db_password' => '',
 		'db_host' => 'localhost',

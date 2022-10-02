@@ -4,7 +4,7 @@
 	</form>
 	
 	<br/>
-	<br/>
+	
 	<h2>List of Lead</h2>
 	
 	<form>
@@ -20,12 +20,18 @@
 	<table class="table">
 		<?php while($_row = $_data_results->fetch_object()){ ?>
 		<tr>
-			<td><?php echo $_row->type; ?></td>
-			<td><?php echo $_row->first_name; ?></td>
-			<td><?php echo $_row->last_name; ?></td>
-			<td><?php echo $_row->email; ?></td>
+			<td><?php echo $_row->company_name; ?></td>
+			<td><?php echo $_row->company_industry; ?></td>
+			<td><?php echo $_row->lead_fname; ?></td>
+			<td><?php echo $_row->lead_lname; ?></td>
+			<td><?php echo $_row->lead_emailadd; ?></td>
 			<td><a href="?cid=<?php echo $_row->id; ?>">Edit</a></td>
 		</tr>
 		<?php } ?>
 	</table>
+	
+	
+	<br/>
+	<br/>
+	
 </div>
