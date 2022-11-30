@@ -67,6 +67,7 @@
 		
 		public function _clean_segment($val)
 		{
+			if(!$val) return;
 			$segmt = str_replace('_', '', $val);
 			$segmt = str_replace('-', '_', $val);
 			return $segmt;

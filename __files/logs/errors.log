@@ -16410,3 +16410,4074 @@ array(10) {
   }
 }
 
+[30-Nov-2022 18:02:14 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:02 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(0) {
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(48) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "49676"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827734.733096)
+    ["REQUEST_TIME"]=>
+    int(1669827734)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(24)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(0) {
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:02:14 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:02:28 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:02 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "49677"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827748.592297)
+    ["REQUEST_TIME"]=>
+    int(1669827748)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(25)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:02:28 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:05:53 Europe/Berlin] str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:05 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50584"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827953.307563)
+    ["REQUEST_TIME"]=>
+    int(1669827953)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(26)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          NULL
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:05:53 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:05:55 Europe/Berlin] str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:05 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50585"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827955.871862)
+    ["REQUEST_TIME"]=>
+    int(1669827955)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(27)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          NULL
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:05:55 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:06:23 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:06 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50802"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827983.33998)
+    ["REQUEST_TIME"]=>
+    int(1669827983)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(28)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #2 ($replace) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:06:23 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:06:24 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:06 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50803"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827984.680089)
+    ["REQUEST_TIME"]=>
+    int(1669827984)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(29)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:06:24 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:06:24 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:06 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50805"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827984.88459)
+    ["REQUEST_TIME"]=>
+    int(1669827984)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(30)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:06:24 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:06:25 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:06 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "50807"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669827985.03379)
+    ["REQUEST_TIME"]=>
+    int(1669827985)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(31)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:06:25 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:09:44 Europe/Berlin] trim(): Passing null to parameter #1 ($string) of type string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:09 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 71
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "51040"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669828184.302597)
+    ["REQUEST_TIME"]=>
+    int(1669828184)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(32)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:09:44 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:11:15 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:11 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "51076"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669828275.237271)
+    ["REQUEST_TIME"]=>
+    int(1669828275)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(33)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(75) "trim(): Passing null to parameter #1 ($string) of type string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(71)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:11:15 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:11:17 Europe/Berlin] str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:11 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 70
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "51077"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669828277.944921)
+    ["REQUEST_TIME"]=>
+    int(1669828277)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(34)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:11:17 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[30-Nov-2022 18:11:50 Europe/Berlin] trim(): Passing null to parameter #1 ($string) of type string is deprecated: MAJOR PROBLEM at localhost:81: November 30, 2022, 6:11 pm
+ errFile: C:\apps\php\ac-base\__cores\builder.c\builder.c.php
+errLine: 71
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(1) {
+    ["PHPSESSID"]=>
+    string(26) "pt9nauopq4jg7j9b51pmoiljva"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(49) {
+    ["MIBDIRS"]=>
+    string(25) "C:/php8.1/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(32) "C:/php8.1/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(12) "localhost:81"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(9) "max-age=0"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(17) "gzip, deflate, br"
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_COOKIE"]=>
+    string(36) "PHPSESSID=pt9nauopq4jg7j9b51pmoiljva"
+    ["PATH"]=>
+    string(706) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\xampp\mysql\bin;C:\Users\juvyc\AppData\Local\Programs\Python\Python38;C:\Program Files (x86)\dotnet\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(62) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(95) "<address>Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12 Server at localhost Port 81</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(47) "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "81"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "51085"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1669828310.074886)
+    ["REQUEST_TIME"]=>
+    int(1669828310)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (9) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(6) "crm_hr"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(14) "127.0.0.1:3306"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.1.12"
+            ["client_version"]=>
+            int(80112)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(25) "127.0.0.1:3306 via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.20-MariaDB"
+            ["server_version"]=>
+            int(100420)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(35)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(false)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(4) {
+          ["_root_"]=>
+          string(7) "default"
+          ["_404_"]=>
+          string(5) "my404"
+          ["dancers2"]=>
+          string(13) "helloworld/hi"
+          ["helloworld"]=>
+          string(13) "helloworld/hi"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "default"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/default/controller/default_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals"]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG"]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(false)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals"]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(8192)
+      ["MESSAGE"]=>
+      string(89) "str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated"
+      ["FILE"]=>
+      string(51) "C:\apps\php\ac-base\__cores\builder.c\builder.c.php"
+      ["LINE"]=>
+      int(70)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[30-Nov-2022 18:11:50 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
