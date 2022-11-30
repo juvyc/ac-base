@@ -3,12 +3,12 @@
 	class _Helper
 	{
 		var $helpers = array();
-		var $globals;
+		var $ACB_GLOBALS;
 		var $name;
 		public function __construct($name='')
 		{
-			global $GLOBALS;
-			$this->globals = $GLOBALS;			
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;			
 			$this->name = $name;
 		}
 		

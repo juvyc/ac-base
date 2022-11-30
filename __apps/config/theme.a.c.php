@@ -22,7 +22,7 @@
 		),
 
 		'static_data' => array(
-			'base_url' => $GLOBALS['path']['base_root'],
+			'base_url' => $ACB_GLOBALS['path']['base_root'],
 			'title' => 'Awonsa Content Management System',
 		),
 	);

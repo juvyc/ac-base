@@ -15,20 +15,20 @@
 	* structures inside that base directory should the same)
 	*/
 	
-	$GLOBALS = Array();
+	$ACB_GLOBALS = Array();
 	
 	/**
 	* Set your base directory where your website started
 	*
-	* Ex. $GLOBALS['path']['base_dir'] = '/public_html';
+	* Ex. $ACB_GLOBALS['path']['base_dir'] = '/public_html';
 	* or better to assign value to realpath for dynamic detection like below
-	* $GLOBALS['path']['base_dir'] = realpath(__DIR__);
+	* $ACB_GLOBALS['path']['base_dir'] = realpath(__DIR__);
 	*
 	* NOTE: You need to change realpath(__DIR__) to static if you are using below of 5.4 PHP version.
 	* The static base path is like '/home/var/public_html'
 	*/
 	
-	$GLOBALS['path']['base_dir'] = realpath(__DIR__);
+	$ACB_GLOBALS['path']['base_dir'] = realpath(__DIR__);
 	
 	/**
 	* @base_root - this is the base location where you put your website
@@ -40,7 +40,7 @@
 	* Ex. '/'
 	*/
 	
-	$GLOBALS['path']['base_root'] = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
+	$ACB_GLOBALS['path']['base_root'] = str_replace(basename($_SERVER['PHP_SELF']), '', $_SERVER['PHP_SELF']);
 	
 	/**
 	* Forlder Aliasis -- is to allow developers to create thier own folder names for
@@ -51,22 +51,22 @@
 	/**
 	* configuration, customs classes and other private files storage
 	*/
-	$GLOBALS['path']['apps_path'] = $GLOBALS['path']['base_dir'] . '/__apps';
+	$ACB_GLOBALS['path']['apps_path'] = $ACB_GLOBALS['path']['base_dir'] . '/__apps';
 	
 	/**
 	* Files Uploads storage
 	*/
-	$GLOBALS['path']['files_path'] = $GLOBALS['path']['base_dir'] . '/__files';
+	$ACB_GLOBALS['path']['files_path'] = $ACB_GLOBALS['path']['base_dir'] . '/__files';
 	
 	/**
 	* Storage of all functionality of ac-base framework
 	*/
-	$GLOBALS['path']['cores_path'] = $GLOBALS['path']['base_dir'] . '/__cores';
+	$ACB_GLOBALS['path']['cores_path'] = $ACB_GLOBALS['path']['base_dir'] . '/__cores';
 	
 	/**
 	* Storage of the layouts or files that generates the user interface
 	*/
-	$GLOBALS['path']['themes_path'] = $GLOBALS['path']['base_dir'] . '/__themes';
+	$ACB_GLOBALS['path']['themes_path'] = $ACB_GLOBALS['path']['base_dir'] . '/__themes';
 	
 	
 	/**
@@ -74,7 +74,7 @@
 	* is integrated
 	*/
 	
-	require_once($GLOBALS['path']['apps_path'] . '/app.a.php');
+	require_once($ACB_GLOBALS['path']['apps_path'] . '/app.a.php');
 		
 
 #//php_end\\;

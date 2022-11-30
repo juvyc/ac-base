@@ -2,7 +2,7 @@
 	
 	class _Builder
 	{
-		public $globals;
+		public $ACB_GLOBALS;
 		public $route;
 		public $bldr_file;
 		public $Uri;
@@ -11,8 +11,8 @@
 		public $ishome = false;
 		
 		public function __construct(){
-			global $GLOBALS;
-			$this->globals = $GLOBALS;
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			$this->Uri = new _Uri();
 			$this->CONFIG = new _CONFIG();
 		}

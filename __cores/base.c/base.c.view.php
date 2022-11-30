@@ -7,13 +7,13 @@
 	*/
 
 	class Base_View{
-		protected $globals;//handle all global variables
+		protected $ACB_GLOBALS;//handle all global variables
 		protected $app_view; //temp handle of view file
 		public function __construct($app_view="")
 		{
 			//Call global parameters
-			global $GLOBALS;
-			$this->globals = $GLOBALS;
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			//securing app_view
 			$this->app_view = $app_view;
 		}

@@ -5,7 +5,7 @@
 		private $DB;
 		private $Uri;
 		private $config;
-		private $globals = array();
+		private $ACB_GLOBALS = array();
 		private $static_routes = array();
 		private $builder;
 		private $inclr_base_segment;
@@ -13,9 +13,9 @@
 		
 		public function __construct()
 		{
-			global $GLOBALS;
+			global $ACB_GLOBALS;
 			
-			$this->globals = $GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			
 			 
 			$this->config = new _CONFIG();

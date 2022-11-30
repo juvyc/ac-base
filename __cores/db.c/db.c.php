@@ -14,15 +14,15 @@
 		
 		protected $db_conn_handler;
 		
-		public $globals = array();
+		public $ACB_GLOBALS = array();
 		
 		public $conn_type = 'mysql';
 		
 		public function __construct($dbclasstype = '', $dbtype = '')
 		{
-			global $GLOBALS;
+			global $ACB_GLOBALS;
 			
-			$this->globals = $GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			
 			$get_array_data_in_file = include $this->globals['path']['apps_path'] . '/config/connection.a.c.php';
 			

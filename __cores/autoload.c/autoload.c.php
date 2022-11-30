@@ -3,11 +3,11 @@
 	class _Autoload
 	{
 		var $helpers = array();
-		var $globals;
+		var $ACB_GLOBALS;
 		public function __construct()
 		{
-			global $GLOBALS;
-			$this->globals = $GLOBALS;
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			$this->helpers = include($this->globals['path']['apps_path'] . '/config/autoload.c.php');
 			$this->loader();
 		}

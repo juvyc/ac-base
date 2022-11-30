@@ -6,14 +6,14 @@
 	
 	class Base_Template
 	{
-		private $globals;
+		private $ACB_GLOBALS;
 		private $param;
 		private $value;
 		
 		public function __construct($param='', $value ='')
 		{
-			global $GLOBALS;
-			$this->globals = $GLOBALS;
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			
 			$this->param = $param;
 			$this->value = $value;

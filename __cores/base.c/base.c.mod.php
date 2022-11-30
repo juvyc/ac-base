@@ -2,13 +2,13 @@
 	
 	class Base_Model{
 	
-		private $globals;
+		private $ACB_GLOBALS;
 		private $app_mod;
 		
 		public function __construct($app_mod = "")
 		{
-			global $GLOBALS;
-			$this->globals = $GLOBALS;
+			global $ACB_GLOBALS;
+			$this->globals = $ACB_GLOBALS;
 			$this->app_mod = $app_mod;
 		}
 		
