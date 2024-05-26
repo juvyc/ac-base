@@ -10,6 +10,9 @@
 		public $fix_fn;
 		public $ishome = false;
 		
+		protected $globals;
+		protected $CONFIG;
+		
 		public function __construct(){
 			global $ACB_GLOBALS;
 			$this->globals = $ACB_GLOBALS;

@@ -9,6 +9,9 @@
 	class Base_View{
 		protected $ACB_GLOBALS;//handle all global variables
 		protected $app_view; //temp handle of view file
+		
+		protected $globals;
+		
 		public function __construct($app_view="")
 		{
 			//Call global parameters

@@ -1,0 +1,39 @@
+<?php
+/**
+* @ACB - Builder
+*/
+
+class [Builder_Name]_Clr extends \Base_System
+{
+	/**
+	* Will be loaded before your route or controller function
+	*/
+	public function load_before()
+	{
+		//Declare your global variable here
+		$this->data = [];
+	}
+	
+	/**
+	* Your controller root
+	* --e.i this will be the default display when you visit your domain.com/[sample] where sample is your controller name
+	*/
+	public function action_index()
+	{
+		//return anything here i.e we will return our template
+		return $this
+					->Ini()
+						->View()
+							->set_data($this->data)
+								->set_template('default/homepage');
+	}
+	
+	/**
+	* This will be loaded after the controller route function is executed
+	*/
+	public function load_after()
+	{
+		//Execute anything you want here after the template is loaded 
+		// -i.e you end temporay session after displaying template
+	}
+}

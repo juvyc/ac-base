@@ -2,8 +2,9 @@
 
 	class _Autoload
 	{
-		var $helpers = array();
-		var $ACB_GLOBALS;
+		public $helpers = array();
+		public $ACB_GLOBALS;
+		protected $globals;
 		public function __construct()
 		{
 			global $ACB_GLOBALS;

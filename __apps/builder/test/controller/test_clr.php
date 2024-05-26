@@ -18,6 +18,7 @@
 		}
 		
 		public function action_index(){
+			return 1;
 			$form = $this->Ini()->Helper('forms')->load()->call();
 			$mod_data = $this->Ini()->Mod('common')->load('data');
 			$mod_metadata = $this->Ini()->Mod('common')->load('metadata');

@@ -2,9 +2,12 @@
 	
 	class _Helper
 	{
-		var $helpers = array();
-		var $ACB_GLOBALS;
-		var $name;
+		public $helpers = array();
+		public $ACB_GLOBALS;
+		public $name;
+		
+		protected $globals;
+		
 		public function __construct($name='')
 		{
 			global $ACB_GLOBALS;

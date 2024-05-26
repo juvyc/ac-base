@@ -2,7 +2,10 @@
 
 	class Default_Clr extends Base_System
 	{
-		var $_data = array(); //Data handler
+		protected $_data = array(); //Data handler
+		protected $forms;
+		protected $conn;
+		protected $_dbq;
 		
 		public function load_before()
 		{

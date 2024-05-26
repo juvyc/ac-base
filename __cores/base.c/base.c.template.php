@@ -10,6 +10,8 @@
 		private $param;
 		private $value;
 		
+		protected $globals;
+		
 		public function __construct($param='', $value ='')
 		{
 			global $ACB_GLOBALS;

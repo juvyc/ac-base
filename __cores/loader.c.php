@@ -17,6 +17,7 @@
 	require_once 'autoload.c/autoload.c.php';
 	require_once 'system.c/system.c.php';
 	require_once 'core.c/core.c.php';
+	require_once 'cmd.c/cmd.php';
 	
 
 #//php_end\\;?>

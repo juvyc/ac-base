@@ -1,0 +1,7 @@
+<?php
+if(!empty($_SERVER['argv'])){
+	require_once '../../__cores/loader.c.php';
+	new CMD($_SERVER['argv']);
+}else{
+	die("ERR: Invalid command");
+}

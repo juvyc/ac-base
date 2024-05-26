@@ -5,6 +5,8 @@
 		private $ACB_GLOBALS;
 		private $app_mod;
 		
+		protected $globals;
+		
 		public function __construct($app_mod = "")
 		{
 			global $ACB_GLOBALS;

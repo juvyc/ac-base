@@ -18,6 +18,8 @@
 		
 		public $conn_type = 'mysql';
 		
+		protected $globals;
+		
 		public function __construct($dbclasstype = '', $dbtype = '')
 		{
 			global $ACB_GLOBALS;

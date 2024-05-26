@@ -11,6 +11,9 @@
 		private $inclr_base_segment;
 		private $inclr_end_segment;
 		
+		protected $globals;
+		public $last_segment;
+		
 		public function __construct()
 		{
 			global $ACB_GLOBALS;
