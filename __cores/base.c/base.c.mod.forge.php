@@ -42,9 +42,22 @@
 		if(count($this->fields)){
 			//prepare database methods
 			$db = $this->__mcn->Ini()->DB()->exec();
+			
+			if(method_exists($this->__mcn, 'validate')){
+				$check_validation = $this->__mcn->validate('insert', $this->fields);
+				if(!$check_validation['success']){
+					$this->fields[$this->__mcn->_primary_key] = $check_validation; // return the id as array if there's an error
+					return;
+				}
+				
+				if(!empty($check_validation['fields_values'])){
+					$this->fields = array_merge($this->fields, $check_validation['fields_values']);
+				}
+			}
+			
 			//Do inserting data
 			$qui = $db->insert($this->__mcn->_table)
-						->set($this->fields)
+						->data($this->fields)
 						->run();
 			
 			//check if saving process is successfull

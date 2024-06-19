@@ -16,7 +16,7 @@
 		
 		public $ACB_GLOBALS = array();
 		
-		public $conn_type = 'mysql';
+		public $conn_type = 'mysqli';
 		
 		protected $globals;
 		
@@ -55,34 +55,42 @@
 		*/
 		public function connect()
 		{
-			if(function_exists('mysqli_connect')){
-				if(!$this->db_conn_handler) $this->db_conn_handler = @mysqli_connect($this->db_host, $this->db_username, $this->db_password, $this->db_name);
-				if(mysqli_connect_errno()){
-					trigger_error("Connect failed: %s\n", mysqli_connect_error(), E_USER_WARNING);
-				}
-				
-				$this->conn_type = 'mysqli';
-				
+			if(!empty($GLOBALS['__db_conn_handler'])){
+				$this->db_conn_handler = $GLOBALS['__db_conn_handler'];
+				$this->conn_type = $GLOBALS['__db_conn_type'];
 			}else{
-				/**
-				* Do connect to the database server
-				*/
-				if(!$this->db_conn_handler = @mysql_connect($this->db_host, $this->db_username, $this->db_password, true)) {
-					trigger_error("Unable to communicate to your database server!", E_USER_WARNING);
+				if(function_exists('mysqli_connect')){
+					if(!$this->db_conn_handler) $this->db_conn_handler = @mysqli_connect($this->db_host, $this->db_username, $this->db_password, $this->db_name);
+					if(mysqli_connect_errno()){
+						trigger_error("Connect failed: %s\n", mysqli_connect_error(), E_USER_WARNING);
+					}
+					
+					$this->conn_type = 'mysqli';
+					
+				}else{
+					/**
+					* Do connect to the database server
+					*/
+					if(!$this->db_conn_handler = @mysql_connect($this->db_host, $this->db_username, $this->db_password, true)) {
+						trigger_error("Unable to communicate to your database server!", E_USER_WARNING);
+					}
+					
+					/**
+					* Do select database name
+					*/
+					if(!mysql_select_db($this->db_name, $this->db_conn_handler)) {
+						trigger_error("Unable to select database, please make sure that your database is really exist on your server!", E_USER_WARNING);				
+					}
+					
+					/**
+					* Setting up the database characters
+					*/
+					mysql_query("SET NAMES utf8", $this->db_conn_handler);
+					mysql_query("SET CHARACTER SET utf8", $this->db_conn_handler);
 				}
 				
-				/**
-				* Do select database name
-				*/
-				if(!mysql_select_db($this->db_name, $this->db_conn_handler)) {
-					trigger_error("Unable to select database, please make sure that your database is really exist on your server!", E_USER_WARNING);				
-				}
-				
-				/**
-				* Setting up the database characters
-				*/
-				mysql_query("SET NAMES utf8", $this->db_conn_handler);
-				mysql_query("SET CHARACTER SET utf8", $this->db_conn_handler);
+				$GLOBALS['__db_conn_handler'] = $this->db_conn_handler;
+				$GLOBALS['__db_conn_type'] = $this->conn_type;
 			}
 		}
 		
@@ -92,10 +100,13 @@
 		*/
 		public function close_conn()
 		{
-			if($this->conn_type == 'mysqli')
+			if($this->conn_type == 'mysqli'){
 				mysqli_close($this->db_conn_handler);
-			else
+				if(!empty($GLOBALS['__db_conn_handler']) && is_resource($GLOBALS['__db_conn_handler'])) mysqli_close($GLOBALS['__db_conn_handler']);
+			}else{
 				mysql_close($this->db_conn_handler);
+				if(!empty($GLOBALS['__db_conn_handler']) && is_resource($GLOBALS['__db_conn_handler'])) mysql_close($GLOBALS['__db_conn_handler']);
+			}
 		}
 		
 		/**
