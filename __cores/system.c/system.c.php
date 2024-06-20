@@ -1593,7 +1593,7 @@
 		/**
 		* using expression route -- this method will read it
 		*/
-		public function _route_preg_match($subject = "")
+		public function _route_preg_match($subject = null)
 		{
 				$captured_route = array();
 				foreach($this->static_routes as $route => $controller){
