@@ -10,13 +10,17 @@
 	
 	public $override = false;
 	
+	public function __construct(){
+		
+	}
+	
 	public function forge($fileName)
 	{	
 		if(isset($_FILES[$fileName]) && $_FILES[$fileName]['name'] != ""){
 			
 			$this->file = $_FILES[$fileName];
 			
-			$this->extension = pathinfo($this->file, PATHINFO_EXTENSION);
+			$this->extension = pathinfo($this->file['name'], PATHINFO_EXTENSION);
 			
 		}
 	}
