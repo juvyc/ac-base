@@ -33,6 +33,7 @@
 		 $fLblClass = (isset($field['lblClass'])) ? $field['lblClass'] : '';
 		 $fLblRequired = (isset($field['required'])) ? 'required' : '';
 		 $fLblAttribs = (isset($field['attribs'])) ? $field['attribs'] : '';
+		 $fconClass = (isset($field['fconClass'])) ? $field['fconClass'] : '';
 		 
 		 $_html = "";
 		 
@@ -47,15 +48,24 @@
 			 }
 		 }else{
 			 if($field['type'] == 'select'){
+				if($fconClass) $_html .= '<div class="form-group row">';
 				$_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<select name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>';
 						if(!empty($field['opt_start'])){
 							$_text = (is_array($field['opt_start'])) ? $field['opt_start']['text'] : $field['opt_start'];
 							$_value = (is_array($field['opt_start'])) ? $field['opt_start']['value'] : $field['opt_start'];
-							$_html .= '<option value="'. $_value .'">'. $_text .'</option>';
+							//$_html .= '<option value="'. $_value .'">'. $_text .'</option>';
+
+							if(isset($field['multiVal']) && isset($props['group_values']) && isset($props['group_values'][$field['multiVal']]) && is_array($props['group_values'][$field['multiVal']])){
+								$_html .= '<option '. ((in_array($_value, $props['group_values'][$field['multiVal']])) ? 'selected="selected"' : '') .' value="'. $_value .'">'. $_text .'</option>';
+							}else{
+								$_html .= '<option '. (($fValue == $_value) ? 'selected="selected"' : '') .' value="'. $_value .'">'. $_text .'</option>';
+							}
+
 						}
 						if(isset($field['options'])){
 							if(isset($field['while_db'])){ //if using while db
@@ -93,12 +103,16 @@
 							}
 						}
 					$_html .= '</select>';
+					if($fconClass) $_html .= '</div>';
 				}
+				if($fconClass) $_html .= '</div>'; //end of container
 			 }else if($field['type'] == 'checkbox'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 if($isView){
 					 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				 }else{
+					 if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					 $fClass = (isset($field['class'])) ? $field['class'] : '';
 					 if(!empty($field['options']) && is_array($field['options'])){
 						 foreach($field['options'] as $opt){
@@ -108,49 +122,75 @@
 					 }else{
 						 $_html .= '<label class="'. $fLblClass .'"><input type="checkbox" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/> '. $field['label'] .'</label>';
 					 }
+					 if($fconClass) $_html .= '</div>';
 				 }
+				 if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'password'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				 }else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<input type="password" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
 				 }
+				 if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'date'){
+				  if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				 }else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<input type="date" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
 				 }
+				 if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'email'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<input type="email" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
 				}
+				if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'text'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<input type="text" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
 				}
+				if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'file'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<input type="file" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
 				}
+				if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'paragraph'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					$_html .= '<textarea name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>'. $fValue .'</textarea>';
+					if($fconClass) $_html .= '</div>';
 				}
+				if($fconClass) $_html .= '</div>';
 			 }else if($field['type'] == 'label'){
 			 	  $_html .= '<label class="'. $fLblClass .'" '. $fLblAttribs .' for="'. $forId .'">'. $field['label'] .'</label>';
 			 }else if($field['type'] == 'hidden'){
@@ -167,7 +207,7 @@
 	 {
 		 $_html = "";
 		 foreach($fields as $field){
-			 $row_class = (isset($field['rClass'])) ? 'row frm-field-row ' . $field['rClass'] : 'frm-field-row row';
+			 $row_class = (isset($field['rClass'])) ? 'form-group row ' . $field['rClass'] : 'form-group row';
 			 $row_style = (isset($field['rStyle'])) ? $field['rStyle'] : '';
 			 if($field['type'] == 'group'){
 				  if(!empty($field['begin'])){
@@ -178,7 +218,7 @@
 				 	 if($_field['type'] =='hidden'){
 				 	 	 $_html .= $this->field_constructor($_field, $props, $isView);
 				 	 }else{
-						 $_html .= '<div class="col-'. ((!empty($_field['gW'])) ? $_field['gW'] : '12') .' frm-field">';
+						 $_html .= '<div class="col-md-'. $_field['gW'] .' frm-field">';
 							$_html .= $this->field_constructor($_field, $props, $isView);
 						 $_html .= '</div>';
 					 }
@@ -193,7 +233,7 @@
 			 	 $_html .= $this->field_constructor($field, $props, $isView);
 			 }else{
 				 $_html .= '<div class="'. $row_class .'" style="'. $row_style .'">';
-					$_html .= '<div class="col-'. ((!empty($field['gW'])) ? $field['gW'] : '12') .' frm-field">';
+					$_html .= '<div class="col-md-'. ((!empty($field['gW'])) ? $field['gW'] : '12') .' frm-field">';
 						$_html .= $this->field_constructor($field, $props, $isView);
 					$_html .= '</div>';
 				 $_html .= '</div>';
@@ -206,20 +246,28 @@
 	 //save form data
 	 public function _save($tblname, $fields=array(), $where=array())
 	 {
-		 $db = $this->Ini()->DB()->exec();
+		 
+		 $this->conn_init = $this->Ini()->DB();
+		 
+		 $db = $this->conn_init->exec();
 		 if(!empty($where)){ //then update
 			 $stmt = $db
 					->update($tblname)
 					->set($fields)
 					->where($where)
 				->run();
+			
+			$this->conn_init->close_conn();
+			
 			return $stmt->affected_rows();
 		 }else{ //insert
 			 $stmt = $db
 					->insert($tblname)
 					->data($fields)
 				->run();
-				
+
+			$this->conn_init->close_conn();
+			
 			return $stmt->insert_id();
 		 }
 	 }
@@ -231,7 +279,7 @@
 			$_html .= '<li class="tbl-row lst-tbl-view-head"><div class="row">';
 			foreach($fields as $fld => $props){
 				$addClass = (isset($props['hClass'])) ? $props['hClass'] : '';
-				$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. $props['label'] .'</div>';
+				$_html .= '<div class="col-md-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. $props['label'] .'</div>';
 			}
 			$_html .= '</div></li>';
 			$icc = 0;
@@ -270,7 +318,7 @@
 							}
 							
 							$addClass = (isset($props['iClass'])) ? $props['iClass'] : '';
-							$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($_ival) .'</div>';
+							$_html .= '<div class="col-md-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($_ival) .'</div>';
 						}
 						$_html .= '</div></li>';
 					}
@@ -285,9 +333,9 @@
 							$addClass = (isset($ffprop['iClass'])) ? $ffprop['iClass'] : '';
 							$ffval = (isset($ffprop['value'])) ? $ffprop['value'] : '';
 							if(!empty($ffprop['trace_value'])){
-								$_html .= '<div class="col-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. ($ffprop['func']($$ffld)) .'</div>';
+								$_html .= '<div class="col-md-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. ($ffprop['func']($$ffld)) .'</div>';
 							}else{
-								$_html .= '<div class="col-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. $ffval .'</div>';
+								$_html .= '<div class="col-md-'. $ffprop['gW'] .' '. $addClass .'" data-field="'. $ffld .'">'. $ffval .'</div>';
 							}
 						}
 						$_html .= '</div></li>';
@@ -302,9 +350,9 @@
 						foreach($fields as $fld => $props){
 							$addClass = (isset($props['addItemClass'])) ? $props['addItemClass'] : '';
 							if(isset($props['func'])){
-								$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($props['func']($item)) .'</div>';
+								$_html .= '<div class="col-md-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. ($props['func']($item)) .'</div>';
 							}else{
-								$_html .= '<div class="col-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. (isset($item[$fld]) ? $item[$fld] : '') .'</div>';
+								$_html .= '<div class="col-md-'. $props['gW'] .' '. $addClass .'" data-field="'. $fld .'">'. (isset($item[$fld]) ? $item[$fld] : '') .'</div>';
 							}
 						}
 						$_html .= '</div></li>';
