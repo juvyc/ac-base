@@ -174,14 +174,24 @@
 		}
 		
 		if(count($this->__where)){
+			$tsnf = json_encode($this->__where);
+			$tsnf = str_replace('{base_table}', $this->__mcn->_table, $tsnf);
+			$this->__where = json_decode($tsnf, true);
 			$this->__stmt = $this->__stmt->where($this->__where);
 		}
 		
 		if(count($this->__or_where)){
+			$tsnf = json_encode($this->__or_where);
+			$tsnf = str_replace('{base_table}', $this->__mcn->_table, $tsnf);
+			$this->__or_where = json_decode($tsnf, true);
 			$this->__stmt = $this->__stmt->or_where($this->__or_where);
 		}
 		
 		if(!empty($this->__tmp_where)){
+			$tsnf = json_encode($this->__tmp_where);
+			$tsnf = str_replace('{base_table}', $this->__mcn->_table, $tsnf);
+			$this->__tmp_where = json_decode($tsnf, true);
+			
 			foreach($this->__tmp_where as $_relwhere){
 				$this->__stmt = $this->__stmt->where($_relwhere);
 			}
@@ -326,5 +336,11 @@
 			
 			return $rsdata;
 		}
+	}
+	
+	//UI Table Output
+	public function ui_tbl($data, $total_rows=0)
+	{
+		return $this->__mcn->ui_tbl_setup($data, $total_rows);
 	}
  }

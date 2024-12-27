@@ -1,6 +1,16 @@
 <?php
- class Forms_Hpr extends Base_System
+ class Forms_Hpr extends \Base_System
  {
+	
+	 public $ready_fields_list = [];
+	 public $current_user, $global_mod, $conn_init;
+	 
+	 public function sync()
+	 {
+		 $this->global_mod =  $this->Ini()->Mod('common')->load('global');
+		 $this->current_user = $this->global_mod->_getCurrentUserInfo();
+	 }
+	 
 	 public function field_constructor($field=array(), $props=array(), $isView=0)
 	 {
 		 if(empty($field)) return '';
@@ -243,32 +253,124 @@
 		 return $_html;
 	 }
 	 
+	 /**
+	 @param $fields, lists of form fields
+	 @param $vals, lists of submitted form fields
+	 */
+	 public function ready_fields($fields=[], $vals=[])
+	 {
+		$_list_ready_fields = [];
+		if(!empty($fields)){
+			foreach($fields as $field){
+				if($field['type'] == 'group'){
+					foreach($field['fields'] as $fldprop){
+						if($fldprop['type'] == 'div' 
+							|| $fldprop['type'] == 'button'
+							|| $fldprop['type'] == 'submit'
+							|| $fldprop['type'] == 'label'
+						) continue;
+						if(isset($fldprop['save']) && $fldprop['save'] === false) continue;
+						
+						if(!empty($vals)){
+							$_list_ready_fields[$fldprop['name']] = $vals[$fldprop['name']];
+						}else{
+							$_list_ready_fields[] = $fldprop['name'];
+						}
+					}
+				}else{
+					$fldprop = $field;
+					if($fldprop['type'] == 'div' 
+						|| $fldprop['type'] == 'button'
+						|| $fldprop['type'] == 'submit'
+						|| $fldprop['type'] == 'label'
+					) continue;
+					if(isset($fldprop['save']) && $fldprop['save'] === false) continue;
+					
+					if(!empty($vals)){
+						$_list_ready_fields[$fldprop['name']] = $vals[$fldprop['name']];
+					}else{
+						$_list_ready_fields[] = $fldprop['name'];
+					}
+				}
+				
+			}
+		}else if(!empty($vals)){
+			foreach($vals as $k => $v){
+				$_list_ready_fields[$k] = $v;
+			}
+		}
+		
+		$this->ready_fields_list = $_list_ready_fields;
+		
+		//Allow to directly access the response with the function
+		return $this;
+	 }
+	 
+	 /*
+	 @param $tblname, table name where to save the data
+	 @param $where, condition statement if the action is update
+	 */
+	 public function final_save($tblname, $where=[])
+	 {
+		$resp = $this->_save($tblname, $this->ready_fields_list, $where); 
+		
+		$this->ready_fields_list = [];
+		
+		return $resp;
+	 }
+	 
 	 //save form data
-	 public function _save($tblname, $fields=array(), $where=array())
+	 public function _save($tblname, $fields=[], $where=[])
 	 {
 		 
 		 $this->conn_init = $this->Ini()->DB();
-		 
 		 $db = $this->conn_init->exec();
+		 
 		 if(!empty($where)){ //then update
-			 $stmt = $db
+			 $affected_rows = $db
 					->update($tblname)
 					->set($fields)
 					->where($where)
+				->run()->affected_rows();
+			
+			if($affected_rows){
+				$db
+					->insert('upsert_logs')
+					->data([
+						'type' => 'update',
+						'table_name' => $tblname,
+						'reference_id' => json_encode($where),
+						'date_time_log' => $this->global_mod->dateTime(),
+						'short_description' => '::USERNAME:: updated the record',
+						'long_description' => json_encode($fields),
+						'logged_in_user_id' => (!empty($this->current_user)) ? $this->current_user->id : 0,
+					])
 				->run();
+			}
 			
-			$this->conn_init->close_conn();
-			
-			return $stmt->affected_rows();
+			return $affected_rows;
 		 }else{ //insert
-			 $stmt = $db
+			 $insert_id = $db
 					->insert($tblname)
 					->data($fields)
-				->run();
-
-			$this->conn_init->close_conn();
+				->run()->insert_id();
 			
-			return $stmt->insert_id();
+			if($insert_id){
+				$db
+					->insert('upsert_logs')
+					->data([
+						'type' => 'insert',
+						'table_name' => $tblname,
+						'reference_id' => $insert_id,
+						'date_time_log' => $this->global_mod->dateTime(),
+						'short_description' => '::USERNAME:: inserted a new record',
+						'long_description' => json_encode($fields),
+						'logged_in_user_id' => (!empty($this->current_user)) ? $this->current_user->id : 0,
+					])
+				->run();
+			}
+			
+			return $insert_id;
 		 }
 	 }
 	 
