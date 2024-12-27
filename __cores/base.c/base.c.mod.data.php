@@ -8,7 +8,7 @@
  {
 	public $fields = array();
 	public $relations_fields = array();
-	private $__where = array(), $__or_where = [], $group_by, $order_by, $limit;
+	private $__where = array(), $__or_where = [], $group_by, $order_by, $limit = [];
 	private $whereOrig = [];
 	private $__tmp_where = [];
 	private $__stmt = null;
@@ -218,6 +218,18 @@
 			}
 		}
 		
+		if($this->group_by){
+			$this->__stmt = $this->__stmt->group_by($this->group_by);
+		}
+		
+		if($this->order_by){
+			$this->__stmt = $this->__stmt->order_by($this->order_by);
+		}
+		
+		if($this->limit){
+			$this->__stmt = $this->__stmt->limit(...$this->limit);
+		}
+		
 		return $this->__stmt;
 	}
 	
@@ -306,7 +318,7 @@
 	
 	public function limit($limit)
 	{
-		$this->limit = $limit;
+		$this->limit[] = $limit;
 		return $this;
 	}
 	
@@ -334,19 +346,6 @@
 		}else{
 			
 			$stmt = $this->_select();
-			
-			
-			if($this->group_by){
-				$stmt = $stmt->group_by($this->group_by);
-			}
-			
-			if($this->order_by){
-				$stmt = $stmt->order_by($this->order_by);
-			}
-			
-			if($this->limit){
-				$stmt = $stmt->limit($this->limit);
-			}
 			
 			$getAll = $stmt->run();
 			$rsdata = array();
