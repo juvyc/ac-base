@@ -9,6 +9,7 @@
 	public $fields = array();
 	public $relations_fields = array();
 	private $__where = array(), $__or_where = [], $group_by, $order_by, $limit;
+	private $whereOrig = [];
 	private $__tmp_where = [];
 	private $__stmt = null;
 	private $_novalidation = false;
@@ -17,6 +18,15 @@
 	private $__mcn; // model class name
 	private $__exclude_relations = [];
 	private $__only_these_relations = [];
+	
+	public function where()
+	{
+		$numargs = func_num_args();
+		$arg_list = func_get_args();
+		if($numargs) $this->whereOrig[] = $arg_list;
+		
+		return $this;
+	}
 	
 	/**
 	* @__construct (method), automatically start executing @Base_Model_Forge class when called
@@ -170,6 +180,17 @@
 				$this->__stmt = $this->__stmt->right_join($_join['props']['table_name'], $_join['props']['alias'])->option($_join['props']['rel_con']);
 			}else if($_join['type'] == 'join_full'){
 				$this->__stmt = $this->__stmt->full_join($_join['props']['table_name'], $_join['props']['alias'])->option($_join['props']['rel_con']);
+			}
+		}
+		
+		if(count($this->whereOrig)){
+			
+			$tsnf = json_encode($this->whereOrig);
+			$tsnf = str_replace('{base_table}', $this->__mcn->_table, $tsnf);
+			$this->whereOrig = json_decode($tsnf, true);
+			
+			foreach($this->whereOrig as $args){
+				$this->__stmt = $this->__stmt->where(...$args);
 			}
 		}
 		
