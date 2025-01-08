@@ -62,24 +62,19 @@
 			/**
 			* BELOW IS THE SAMPLE DATABASE QUERY
 			*
-			
-			$stmt = $this
-					->DB
-							->exec()
-								->select("*")
-								->from('zip_code')
-										->where(array('zip_code_id'=>1))
-					->run();
-										
-			return var_dump($stmt->fetch_object());							
-										exit;
 			*/
 		
 		
 			/**
 			* The application loader
 			*/
-			return $this->_request_analyzer();
+			$out = $this->_request_analyzer();
+			
+			//Close db
+			$this->DB->close_conn();
+			
+			
+			return $out;
 		}
 		
 		/**
