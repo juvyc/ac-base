@@ -3,7 +3,10 @@
  {
 	
 	 public $ready_fields_list = [];
+	 public $foreign_save_list = []; //Some actions required after the insertion of the parent table
 	 public $current_user, $global_mod, $conn_init;
+	 
+	 private $all_vals = [];
 	 
 	 public function sync()
 	 {
@@ -19,13 +22,13 @@
 		 $fId = (isset($field['id'])) ? $field['id'] : $fName;
 		 
 		 if(isset($field['id'])){
-		 	 $fValue = (isset($field['value'])) ? $field['value'] : ((isset($props['group_values']) && isset($props['group_values'][$field['id']])) ? $props['group_values'][$field['id']] : '');
+		 	 $fValue = (isset($props['group_values']) && isset($props['group_values'][$field['id']])) ? $props['group_values'][$field['id']] : (isset($field['value']) ? $field['value'] : '');
 		 	 if(isset($field['func'])){
 		 	 	 $fValue = $field['func']($fValue);
 		 	 }
 		 	 $forId =$field['id']; 
 		 }else{
-		 	 $fValue = (isset($field['value'])) ? $field['value'] : ((isset($props['group_values']) && isset($props['group_values'][$fName])) ? $props['group_values'][$fName] : '');
+		 	 $fValue = (isset($props['group_values']) && isset($props['group_values'][$fName])) ? $props['group_values'][$fName] : (isset($field['value']) ? $field['value'] : '');
 		 	 if(isset($field['func'])){
 		 	 	 $fValue = $field['func']($fValue);
 		 	 }
@@ -44,6 +47,7 @@
 		 $fLblRequired = (isset($field['required'])) ? 'required' : '';
 		 $fLblAttribs = (isset($field['attribs'])) ? $field['attribs'] : '';
 		 $fconClass = (isset($field['fconClass'])) ? $field['fconClass'] : '';
+		 $placeholder = (isset($field['placeholder'])) ? ' placeholder="'. $field['placeholder'] .'" ' : '';
 		 
 		 $_html = "";
 		 
@@ -64,7 +68,7 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<select name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>';
+					$_html .= '<select '. $placeholder . (isset($field['multiVal']) ? 'multiple' : '') .' name="'. $fName . (isset($field['multiVal']) ? '[]' : '') .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>';
 						if(!empty($field['opt_start'])){
 							$_text = (is_array($field['opt_start'])) ? $field['opt_start']['text'] : $field['opt_start'];
 							$_value = (is_array($field['opt_start'])) ? $field['opt_start']['value'] : $field['opt_start'];
@@ -142,18 +146,18 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				 }else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<input type="password" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					$_html .= '<input type="password" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
 					if($fconClass) $_html .= '</div>';
 				 }
 				 if($fconClass) $_html .= '</div>';
-			 }else if($field['type'] == 'date'){
+			 }else if($field['type'] == 'date' || $field['type'] == 'time'){
 				  if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
 				 if($isView){
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				 }else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<input type="date" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					$_html .= '<input type="'. $field['type'] .'" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
 					if($fconClass) $_html .= '</div>';
 				 }
 				 if($fconClass) $_html .= '</div>';
@@ -164,7 +168,7 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<input type="email" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					$_html .= '<input type="email" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
 					if($fconClass) $_html .= '</div>';
 				}
 				if($fconClass) $_html .= '</div>';
@@ -175,10 +179,23 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<input type="text" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					$_html .= '<input type="text" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
 					if($fconClass) $_html .= '</div>';
 				}
 				if($fconClass) $_html .= '</div>';
+				
+			 }else if($field['type'] == 'number'){
+				 if($fconClass) $_html .= '<div class="form-group row">';
+				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
+				 if($isView){
+					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
+				}else{
+					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
+					$_html .= '<input type="number" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					if($fconClass) $_html .= '</div>';
+				}
+				if($fconClass) $_html .= '</div>';
+				
 			 }else if($field['type'] == 'file'){
 				 if($fconClass) $_html .= '<div class="form-group row">';
 				 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
@@ -186,7 +203,7 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<input type="file" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
+					$_html .= '<input type="file" '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/>';
 					if($fconClass) $_html .= '</div>';
 				}
 				if($fconClass) $_html .= '</div>';
@@ -197,7 +214,7 @@
 					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
 				}else{
 					if($fconClass) $_html .= '<div class="'. $fconClass .'">';
-					$_html .= '<textarea name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>'. $fValue .'</textarea>';
+					$_html .= '<textarea '. $placeholder .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" '. $fLblRequired .' '. $fLblAttribs .'>'. $fValue .'</textarea>';
 					if($fconClass) $_html .= '</div>';
 				}
 				if($fconClass) $_html .= '</div>';
@@ -271,10 +288,14 @@
 						) continue;
 						if(isset($fldprop['save']) && $fldprop['save'] === false) continue;
 						
-						if(!empty($vals)){
-							$_list_ready_fields[$fldprop['name']] = $vals[$fldprop['name']];
+						if(!empty($fldprop['save'])){
+							$this->foreign_save_list[$fldprop['name']] = $fldprop['save'];
 						}else{
-							$_list_ready_fields[] = $fldprop['name'];
+							if(!empty($vals)){
+								$_list_ready_fields[$fldprop['name']] = (!empty($vals[$fldprop['name']]) ? $vals[$fldprop['name']] : (isset($fldprop['defval']) ? $fldprop['defval'] : $vals[$fldprop['name']]));
+							}else{
+								$_list_ready_fields[] = $fldprop['name'];
+							}
 						}
 					}
 				}else{
@@ -284,12 +305,17 @@
 						|| $fldprop['type'] == 'submit'
 						|| $fldprop['type'] == 'label'
 					) continue;
+					
 					if(isset($fldprop['save']) && $fldprop['save'] === false) continue;
 					
-					if(!empty($vals)){
-						$_list_ready_fields[$fldprop['name']] = $vals[$fldprop['name']];
+					if(!empty($fldprop['save'])){
+						$this->foreign_save_list[$fldprop['name']] = $fldprop['save'];
 					}else{
-						$_list_ready_fields[] = $fldprop['name'];
+						if(!empty($vals)){
+							$_list_ready_fields[$fldprop['name']] = (!empty($vals[$fldprop['name']]) ? $vals[$fldprop['name']] : (isset($fldprop['defval']) ? $fldprop['defval'] : $vals[$fldprop['name']]));
+						}else{
+							$_list_ready_fields[] = $fldprop['name'];
+						}
 					}
 				}
 				
@@ -299,6 +325,8 @@
 				$_list_ready_fields[$k] = $v;
 			}
 		}
+		
+		$this->all_vals = $vals;
 		
 		$this->ready_fields_list = $_list_ready_fields;
 		
@@ -315,40 +343,50 @@
 		$resp = $this->_save($tblname, $this->ready_fields_list, $where); 
 		
 		$this->ready_fields_list = [];
+		$this->foreign_save_list = [];
 		
 		return $resp;
 	 }
 	 
 	 //save form data
 	 public function _save($tblname, $fields=[], $where=[])
-	 {
-		 
+	 {	 
 		 $this->conn_init = $this->Ini()->DB();
 		 $db = $this->conn_init->exec();
 		 
 		 if(!empty($where)){ //then update
-			 $affected_rows = $db
-					->update($tblname)
-					->set($fields)
-					->where($where)
-				->run()->affected_rows();
+			$getCurrent = $db->select()->from($tblname)->where($where)->run()->fetch_array();
 			
-			if($affected_rows){
-				$db
-					->insert('upsert_logs')
-					->data([
-						'type' => 'update',
-						'table_name' => $tblname,
-						'reference_id' => json_encode($where),
-						'date_time_log' => $this->global_mod->dateTime(),
-						'short_description' => '::USERNAME:: updated the record',
-						'long_description' => json_encode($fields),
-						'logged_in_user_id' => (!empty($this->current_user)) ? $this->current_user->id : 0,
-					])
-				->run();
+			if(!empty($getCurrent)){
+				 $affected_rows = $db
+						->update($tblname)
+						->set($fields)
+						->where($where)
+					->run()->affected_rows();
+				
+				$this->sub_action_processor($db, 'update', $getCurrent['id']);
+				
+				if($affected_rows){
+					
+					$db
+						->insert('upsert_logs')
+						->data([
+							'type' => 'update',
+							'table_name' => $tblname,
+							'reference_id' => json_encode($where),
+							'date_time_log' => $this->global_mod->dateTime(),
+							'short_description' => '::USERNAME:: updated the record',
+							'long_description' => json_encode($fields),
+							'logged_in_user_id' => (!empty($this->current_user)) ? $this->current_user->id : 0,
+						])
+					->run();
+				}
+				
+				return $affected_rows;
 			}
 			
-			return $affected_rows;
+			return false;
+			
 		 }else{ //insert
 			 $insert_id = $db
 					->insert($tblname)
@@ -356,6 +394,9 @@
 				->run()->insert_id();
 			
 			if($insert_id){
+				
+				$this->sub_action_processor($db, 'insert', $insert_id);
+				
 				$db
 					->insert('upsert_logs')
 					->data([
@@ -372,6 +413,60 @@
 			
 			return $insert_id;
 		 }
+	 }
+	 
+	 private function sub_action_processor($db, $act, $curr_id)
+	 {
+		 if(!empty($this->foreign_save_list)){
+			
+			foreach($this->foreign_save_list as $fn => $al){
+				//get the value
+				$this_val = $this->all_vals[$fn];
+				foreach($al as $arg){
+					if($act == 'update'){
+						$db->delete($arg['t'])->where($arg['fk'], $curr_id)->run();
+					}
+					//If action is insert
+					if(in_array($arg['a'], [$act, 'upsert'])){
+						//if function argument is present then prioritize it
+						if(isset($arg['f'])) $arg['f']($curr_id, $this_val);
+						else{
+							if(is_array($this_val)){
+								foreach($this_val as $v){
+									$atts = [];
+									$atts[$arg['fk']] = $curr_id;
+									$atts[$arg['fv']] = $v;
+									if(!empty($arg['xt'])){
+										foreach($arg['xt'] as $xfn => $xfv){
+											$atts[$xfn] = $xfv;
+										}
+									}
+									
+									$db
+										->insert($arg['t'])
+										->data($atts)
+									->run();
+								}
+							}else{
+								$atts = [];
+								$atts[$arg['fk']] = $curr_id;
+								$atts[$arg['fv']] = $this->all_vals[$fn];
+								if(!empty($arg['xt'])){
+									foreach($arg['xt'] as $xfn => $xfv){
+										$atts[$xfn] = $xfv;
+									}
+								}
+								
+								$db
+									->insert($arg['t'])
+									->data($atts)
+								->run();
+							}
+						}
+					}
+				}
+			}
+		}
 	 }
 	 
 	 //list view builder
