@@ -18,6 +18,15 @@
 	private $__mcn; // model class name
 	private $__exclude_relations = [];
 	private $__only_these_relations = [];
+	private $__only = '';
+	
+	//Set the value only
+	public function value_only($param)
+	{
+		$this->__only = $param;
+		
+		return $this;
+	}
 	
 	public function where()
 	{
@@ -351,7 +360,7 @@
 			$rsdata = array();
 			while($row = $getAll->fetch_object())
 			{	
-				$rsdata[] = $row;
+				$rsdata[] = ($this->__only) ? $row->{$this->__only} : $row;
 			}
 			
 			return $rsdata;
