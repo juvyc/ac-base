@@ -9,11 +9,9 @@
 		*/
 		'common_assets' => array(
 			'css' => array(
-				'__assets/css/bootstrap.min.css',
-				'__assets/css/main.css',
+				'__assets/css/acb.css',
 			),
 			'js' => array(
-				'__assets/js/bootstrap.min.js',
 			),
 		),
 		
@@ -22,7 +20,6 @@
 		),
 
 		'static_data' => array(
-			'base_url' => $ACB_GLOBALS['path']['base_root'],
-			'title' => 'Awonsa Content Management System',
+			'title' => 'AC-Base PHP Framework',
 		),
 	);

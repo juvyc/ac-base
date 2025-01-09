@@ -1,0 +1,42 @@
+html,body{
+	margin:0;padding:0;
+}
+
+html:not(.page404){
+	background: rgb(131,58,180);
+	background: linear-gradient(219deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	height:100%;
+}
+
+html.page404{
+	background:#BDCFEE;
+	height:100%;
+}
+
+body{
+	height: 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+p,div,li{
+	font-size:1.3rem;
+}
+
+.acb-container{
+	background-color:#fff;
+	border-radius:10px;
+	max-width:1200px;
+	margin:0 auto;
+	padding:50px;
+	margin-top:50px;
+}
+
+.acb-404{
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:2.3rem;
+	color:gray;
+}

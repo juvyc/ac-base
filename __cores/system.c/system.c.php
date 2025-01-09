@@ -70,8 +70,11 @@
 			*/
 			$out = $this->_request_analyzer();
 			
-			//Close db
-			$this->DB->close_conn();
+			//Check if db is enabled
+			if($this->config->enable_database){ 
+				//Close db
+				$this->DB->close_conn();
+			}
 			
 			
 			return $out;

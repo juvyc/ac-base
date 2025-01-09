@@ -22742,3 +22742,662 @@ array(8) {
 }
 
 [26-May-2024 04:40:23 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[08-Jan-2025 17:00:48 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'crm_hr' in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('127.0.0.1:3306', 'root', Object(SensitiveParameterValue), 'crm_hr')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 17:15:40 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'crm_hr' in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('127.0.0.1:3306', 'root', Object(SensitiveParameterValue), 'crm_hr')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 17:15:41 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'crm_hr' in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('127.0.0.1:3306', 'root', Object(SensitiveParameterValue), 'crm_hr')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 17:15:42 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'crm_hr' in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('127.0.0.1:3306', 'root', Object(SensitiveParameterValue), 'crm_hr')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 17:15:42 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown database 'crm_hr' in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('127.0.0.1:3306', 'root', Object(SensitiveParameterValue), 'crm_hr')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 18:11:09 Europe/Berlin] Trying to access array offset on value of type int: MAJOR PROBLEM at localhost: January 8, 2025, 6:11 pm
+ errFile: C:\apps\php\ac-base\__cores\db.c\db.c.php
+errLine: 31
+array(8) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(6) {
+    ["wf_loginalerted_52d7abb20f5bd65698ce368d6bf540477127efe7b61d313bd63067a9df5c2300"]=>
+    string(64) "b063398e8dc773ebefd232d071ed777d6d6fc1840ef445001c6b8a0ca754fd39"
+    ["_ga"]=>
+    string(27) "GA1.1.1223880050.1725255520"
+    ["_fbp"]=>
+    string(37) "fb.0.1725255520256.429690785622769786"
+    ["_ga_K8SNWFCJR6"]=>
+    string(38) "GS1.1.1729242539.1.1.1729243258.60.0.0"
+    ["_ga_4VX57D86XT"]=>
+    string(37) "GS1.1.1729344369.2.1.1729344447.0.0.0"
+    ["PHPSESSID"]=>
+    string(26) "tlqcti3u8immsgpnm13jks8u5s"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(24) "C:/xampp/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(31) "C:/xampp/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(9) "localhost"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(23) "gzip, deflate, br, zstd"
+    ["HTTP_COOKIE"]=>
+    string(369) "wf_loginalerted_52d7abb20f5bd65698ce368d6bf540477127efe7b61d313bd63067a9df5c2300=b063398e8dc773ebefd232d071ed777d6d6fc1840ef445001c6b8a0ca754fd39; _ga=GA1.1.1223880050.1725255520; _fbp=fb.0.1725255520256.429690785622769786; _ga_K8SNWFCJR6=GS1.1.1729242539.1.1.1729243258.60.0.0; _ga_4VX57D86XT=GS1.1.1729344369.2.1.1729344447.0.0.0; PHPSESSID=tlqcti3u8immsgpnm13jks8u5s"
+    ["PATH"]=>
+    string(1095) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-1.8\bin;C:\xampp\mysql\bin;C:\Users\PZPSPL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\PZPSPL\AppData\Local\Programs\Python\Python312\;C:\Users\PZPSPL\scoop\shims;C:\Users\PZPSPL\AppData\Local\Microsoft\WindowsApps;C:\Users\PZPSPL\AppData\Roaming\npm;C:\Users\PZPSPL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\PZPSPL\AppData\Roaming\Composer\vendor\bin;C:\Users\PZPSPL\.dotnet\tools"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(94) "<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(46) "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "80"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "52230"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1736356268.640641)
+    ["REQUEST_TIME"]=>
+    int(1736356268)
+  }
+  ["ACB_GLOBALS"]=>
+  &array(1) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+  }
+  ["_SESSION"]=>
+  &array(0) {
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+}
+
+[08-Jan-2025 18:11:09 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21
+[08-Jan-2025 18:14:43 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('', '', Object(SensitiveParameterValue), '')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 18:14:44 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('', '', Object(SensitiveParameterValue), '')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 18:16:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function close_conn() on null in C:\apps\php\ac-base\__cores\system.c\system.c.php:74
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\core.c\core.c.php(22): _SYSTEM->application()
+#1 C:\apps\php\ac-base\__apps\app.a.php(22): _CORE->exec_app()
+#2 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#3 {main}
+  thrown in C:\apps\php\ac-base\__cores\system.c\system.c.php on line 74
+[08-Jan-2025 18:54:10 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('', '', Object(SensitiveParameterValue), '')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 18:54:16 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\apps\php\ac-base\__cores\db.c\db.c.php:63
+Stack trace:
+#0 C:\apps\php\ac-base\__cores\db.c\db.c.php(63): mysqli_connect('', '', Object(SensitiveParameterValue), '')
+#1 C:\apps\php\ac-base\__cores\db.c\db.c.php(45): _DB->connect()
+#2 C:\apps\php\ac-base\__cores\system.c\system.c.php(38): _DB->__construct()
+#3 C:\apps\php\ac-base\__cores\core.c\core.c.php(15): _SYSTEM->__construct()
+#4 C:\apps\php\ac-base\__cores\core.c\core.c.php(8): _CORE->read_system()
+#5 C:\apps\php\ac-base\__apps\app.a.php(21): _CORE->__construct()
+#6 C:\apps\php\ac-base\index.php(77): require_once('C:\\apps\\php\\ac-...')
+#7 {main}
+  thrown in C:\apps\php\ac-base\__cores\db.c\db.c.php on line 63
+[08-Jan-2025 18:56:30 Europe/Berlin] Undefined variable $ACB_GLOBALS: MAJOR PROBLEM at localhost: January 8, 2025, 6:56 pm
+ errFile: C:\apps\php\ac-base\__apps\config\theme.a.c.php
+errLine: 23
+array(10) {
+  ["_GET"]=>
+  array(0) {
+  }
+  ["_POST"]=>
+  array(0) {
+  }
+  ["_COOKIE"]=>
+  array(6) {
+    ["wf_loginalerted_52d7abb20f5bd65698ce368d6bf540477127efe7b61d313bd63067a9df5c2300"]=>
+    string(64) "b063398e8dc773ebefd232d071ed777d6d6fc1840ef445001c6b8a0ca754fd39"
+    ["_ga"]=>
+    string(27) "GA1.1.1223880050.1725255520"
+    ["_fbp"]=>
+    string(37) "fb.0.1725255520256.429690785622769786"
+    ["_ga_K8SNWFCJR6"]=>
+    string(38) "GS1.1.1729242539.1.1.1729243258.60.0.0"
+    ["_ga_4VX57D86XT"]=>
+    string(37) "GS1.1.1729344369.2.1.1729344447.0.0.0"
+    ["PHPSESSID"]=>
+    string(26) "tlqcti3u8immsgpnm13jks8u5s"
+  }
+  ["_FILES"]=>
+  array(0) {
+  }
+  ["_SERVER"]=>
+  array(50) {
+    ["MIBDIRS"]=>
+    string(24) "C:/xampp/php/extras/mibs"
+    ["MYSQL_HOME"]=>
+    string(16) "\xampp\mysql\bin"
+    ["OPENSSL_CONF"]=>
+    string(31) "C:/xampp/apache/bin/openssl.cnf"
+    ["PHP_PEAR_SYSCONF_DIR"]=>
+    string(10) "\xampp\php"
+    ["PHPRC"]=>
+    string(10) "\xampp\php"
+    ["TMP"]=>
+    string(10) "\xampp\tmp"
+    ["HTTP_HOST"]=>
+    string(9) "localhost"
+    ["HTTP_CONNECTION"]=>
+    string(10) "keep-alive"
+    ["HTTP_PRAGMA"]=>
+    string(8) "no-cache"
+    ["HTTP_CACHE_CONTROL"]=>
+    string(8) "no-cache"
+    ["HTTP_SEC_CH_UA"]=>
+    string(65) ""Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24""
+    ["HTTP_SEC_CH_UA_MOBILE"]=>
+    string(2) "?0"
+    ["HTTP_SEC_CH_UA_PLATFORM"]=>
+    string(9) ""Windows""
+    ["HTTP_ACCEPT_LANGUAGE"]=>
+    string(14) "en-US,en;q=0.9"
+    ["HTTP_UPGRADE_INSECURE_REQUESTS"]=>
+    string(1) "1"
+    ["HTTP_USER_AGENT"]=>
+    string(111) "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    ["HTTP_ACCEPT"]=>
+    string(135) "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+    ["HTTP_SEC_FETCH_SITE"]=>
+    string(4) "none"
+    ["HTTP_SEC_FETCH_MODE"]=>
+    string(8) "navigate"
+    ["HTTP_SEC_FETCH_USER"]=>
+    string(2) "?1"
+    ["HTTP_SEC_FETCH_DEST"]=>
+    string(8) "document"
+    ["HTTP_ACCEPT_ENCODING"]=>
+    string(23) "gzip, deflate, br, zstd"
+    ["HTTP_COOKIE"]=>
+    string(369) "wf_loginalerted_52d7abb20f5bd65698ce368d6bf540477127efe7b61d313bd63067a9df5c2300=b063398e8dc773ebefd232d071ed777d6d6fc1840ef445001c6b8a0ca754fd39; _ga=GA1.1.1223880050.1725255520; _fbp=fb.0.1725255520256.429690785622769786; _ga_K8SNWFCJR6=GS1.1.1729242539.1.1.1729243258.60.0.0; _ga_4VX57D86XT=GS1.1.1729344369.2.1.1729344447.0.0.0; PHPSESSID=tlqcti3u8immsgpnm13jks8u5s"
+    ["PATH"]=>
+    string(1095) "C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Tesseract-OCR;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-1.8\bin;C:\xampp\mysql\bin;C:\Users\PZPSPL\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\PZPSPL\AppData\Local\Programs\Python\Python312\;C:\Users\PZPSPL\scoop\shims;C:\Users\PZPSPL\AppData\Local\Microsoft\WindowsApps;C:\Users\PZPSPL\AppData\Roaming\npm;C:\Users\PZPSPL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\PZPSPL\AppData\Roaming\Composer\vendor\bin;C:\Users\PZPSPL\.dotnet\tools"
+    ["SystemRoot"]=>
+    string(10) "C:\Windows"
+    ["COMSPEC"]=>
+    string(27) "C:\Windows\system32\cmd.exe"
+    ["PATHEXT"]=>
+    string(53) ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"
+    ["WINDIR"]=>
+    string(10) "C:\Windows"
+    ["SERVER_SIGNATURE"]=>
+    string(94) "<address>Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12 Server at localhost Port 80</address>
+"
+    ["SERVER_SOFTWARE"]=>
+    string(46) "Apache/2.4.58 (Win64) OpenSSL/3.1.3 PHP/8.2.12"
+    ["SERVER_NAME"]=>
+    string(9) "localhost"
+    ["SERVER_ADDR"]=>
+    string(3) "::1"
+    ["SERVER_PORT"]=>
+    string(2) "80"
+    ["REMOTE_ADDR"]=>
+    string(3) "::1"
+    ["DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["REQUEST_SCHEME"]=>
+    string(4) "http"
+    ["CONTEXT_PREFIX"]=>
+    string(0) ""
+    ["CONTEXT_DOCUMENT_ROOT"]=>
+    string(11) "C:/apps/php"
+    ["SERVER_ADMIN"]=>
+    string(20) "postmaster@localhost"
+    ["SCRIPT_FILENAME"]=>
+    string(29) "C:/apps/php/ac-base/index.php"
+    ["REMOTE_PORT"]=>
+    string(5) "52394"
+    ["GATEWAY_INTERFACE"]=>
+    string(7) "CGI/1.1"
+    ["SERVER_PROTOCOL"]=>
+    string(8) "HTTP/1.1"
+    ["REQUEST_METHOD"]=>
+    string(3) "GET"
+    ["QUERY_STRING"]=>
+    string(0) ""
+    ["REQUEST_URI"]=>
+    string(9) "/ac-base/"
+    ["SCRIPT_NAME"]=>
+    string(18) "/ac-base/index.php"
+    ["PHP_SELF"]=>
+    string(18) "/ac-base/index.php"
+    ["REQUEST_TIME_FLOAT"]=>
+    float(1736358990.437781)
+    ["REQUEST_TIME"]=>
+    int(1736358990)
+  }
+  ["ACB_GLOBALS"]=>
+  array(2) {
+    ["path"]=>
+    array(6) {
+      ["base_dir"]=>
+      string(19) "C:\apps\php\ac-base"
+      ["base_root"]=>
+      string(9) "/ac-base/"
+      ["apps_path"]=>
+      string(26) "C:\apps\php\ac-base/__apps"
+      ["files_path"]=>
+      string(27) "C:\apps\php\ac-base/__files"
+      ["cores_path"]=>
+      string(27) "C:\apps\php\ac-base/__cores"
+      ["themes_path"]=>
+      string(28) "C:\apps\php\ac-base/__themes"
+    }
+    ["system"]=>
+    object(_CORE)#1 (1) {
+      ["event_handler":"_CORE":private]=>
+      object(_SYSTEM)#2 (10) {
+        ["DB":"_SYSTEM":private]=>
+        object(_DB)#4 (9) {
+          ["db_name":protected]=>
+          string(4) "test"
+          ["db_username":protected]=>
+          string(4) "root"
+          ["db_password":protected]=>
+          string(0) ""
+          ["db_host":protected]=>
+          string(9) "localhost"
+          ["db_prefix"]=>
+          string(0) ""
+          ["db_conn_handler":protected]=>
+          object(mysqli)#5 (18) {
+            ["affected_rows"]=>
+            int(0)
+            ["client_info"]=>
+            string(14) "mysqlnd 8.2.12"
+            ["client_version"]=>
+            int(80212)
+            ["connect_errno"]=>
+            int(0)
+            ["connect_error"]=>
+            NULL
+            ["errno"]=>
+            int(0)
+            ["error"]=>
+            string(0) ""
+            ["error_list"]=>
+            array(0) {
+            }
+            ["field_count"]=>
+            int(0)
+            ["host_info"]=>
+            string(20) "localhost via TCP/IP"
+            ["info"]=>
+            NULL
+            ["insert_id"]=>
+            int(0)
+            ["server_info"]=>
+            string(15) "10.4.32-MariaDB"
+            ["server_version"]=>
+            int(100432)
+            ["sqlstate"]=>
+            string(5) "00000"
+            ["protocol_version"]=>
+            int(10)
+            ["thread_id"]=>
+            int(1321)
+            ["warning_count"]=>
+            int(0)
+          }
+          ["ACB_GLOBALS"]=>
+          array(0) {
+          }
+          ["conn_type"]=>
+          string(6) "mysqli"
+          ["globals":protected]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+        }
+        ["Uri":"_SYSTEM":private]=>
+        object(_Uri)#6 (0) {
+        }
+        ["config":"_SYSTEM":private]=>
+        object(_CONFIG)#3 (2) {
+          ["enable_database"]=>
+          bool(true)
+          ["system"]=>
+          array(1) {
+            ["status_on"]=>
+            bool(true)
+          }
+        }
+        ["ACB_GLOBALS":"_SYSTEM":private]=>
+        array(0) {
+        }
+        ["static_routes":"_SYSTEM":private]=>
+        array(2) {
+          ["_root_"]=>
+          string(7) "welcome"
+          ["_404_"]=>
+          string(4) "_404"
+        }
+        ["builder":"_SYSTEM":private]=>
+        object(_Builder)#7 (9) {
+          ["ACB_GLOBALS"]=>
+          NULL
+          ["route"]=>
+          string(7) "welcome"
+          ["bldr_file"]=>
+          string(69) "C:\apps\php\ac-base/__apps/builder/welcome/controller/welcome_clr.php"
+          ["Uri"]=>
+          object(_Uri)#8 (0) {
+          }
+          ["static_segments"]=>
+          array(0) {
+          }
+          ["fix_fn"]=>
+          NULL
+          ["ishome"]=>
+          bool(false)
+          ["globals":protected]=>
+          array(1) {
+            ["path"]=>
+            array(6) {
+              ["base_dir"]=>
+              string(19) "C:\apps\php\ac-base"
+              ["base_root"]=>
+              string(9) "/ac-base/"
+              ["apps_path"]=>
+              string(26) "C:\apps\php\ac-base/__apps"
+              ["files_path"]=>
+              string(27) "C:\apps\php\ac-base/__files"
+              ["cores_path"]=>
+              string(27) "C:\apps\php\ac-base/__cores"
+              ["themes_path"]=>
+              string(28) "C:\apps\php\ac-base/__themes"
+            }
+          }
+          ["CONFIG":protected]=>
+          object(_CONFIG)#9 (2) {
+            ["enable_database"]=>
+            bool(true)
+            ["system"]=>
+            array(1) {
+              ["status_on"]=>
+              bool(true)
+            }
+          }
+        }
+        ["inclr_base_segment":"_SYSTEM":private]=>
+        NULL
+        ["inclr_end_segment":"_SYSTEM":private]=>
+        NULL
+        ["globals":protected]=>
+        array(1) {
+          ["path"]=>
+          array(6) {
+            ["base_dir"]=>
+            string(19) "C:\apps\php\ac-base"
+            ["base_root"]=>
+            string(9) "/ac-base/"
+            ["apps_path"]=>
+            string(26) "C:\apps\php\ac-base/__apps"
+            ["files_path"]=>
+            string(27) "C:\apps\php\ac-base/__files"
+            ["cores_path"]=>
+            string(27) "C:\apps\php\ac-base/__cores"
+            ["themes_path"]=>
+            string(28) "C:\apps\php\ac-base/__themes"
+          }
+        }
+        ["last_segment"]=>
+        NULL
+      }
+    }
+  }
+  ["_SESSION"]=>
+  &array(1) {
+    ["_ERROR_"]=>
+    array(5) {
+      ["CODE"]=>
+      int(2)
+      ["MESSAGE"]=>
+      string(50) "Trying to access array offset on value of type int"
+      ["FILE"]=>
+      string(41) "C:\apps\php\ac-base\__cores\db.c\db.c.php"
+      ["LINE"]=>
+      int(31)
+      ["EXEC"]=>
+      string(4) "TRUE"
+    }
+  }
+  ["_error_parameters"]=>
+  &array(1) {
+    ["ADMIN_EMAIL_ADDR"]=>
+    string(0) ""
+  }
+  ["__db_conn_handler"]=>
+  object(mysqli)#5 (18) {
+    ["affected_rows"]=>
+    int(0)
+    ["client_info"]=>
+    string(14) "mysqlnd 8.2.12"
+    ["client_version"]=>
+    int(80212)
+    ["connect_errno"]=>
+    int(0)
+    ["connect_error"]=>
+    NULL
+    ["errno"]=>
+    int(0)
+    ["error"]=>
+    string(0) ""
+    ["error_list"]=>
+    array(0) {
+    }
+    ["field_count"]=>
+    int(0)
+    ["host_info"]=>
+    string(20) "localhost via TCP/IP"
+    ["info"]=>
+    NULL
+    ["insert_id"]=>
+    int(0)
+    ["server_info"]=>
+    string(15) "10.4.32-MariaDB"
+    ["server_version"]=>
+    int(100432)
+    ["sqlstate"]=>
+    string(5) "00000"
+    ["protocol_version"]=>
+    int(10)
+    ["thread_id"]=>
+    int(1321)
+    ["warning_count"]=>
+    int(0)
+  }
+  ["__db_conn_type"]=>
+  string(6) "mysqli"
+}
+
+[08-Jan-2025 18:56:30 Europe/Berlin] PHP Deprecated:  auto_detect_line_endings is deprecated in C:\apps\php\ac-base\__cores\error.c\error.view.c.php on line 21

@@ -33,7 +33,7 @@
 			* TRUE = meaning the system is active
 			* FALSE = meaning the system is offline or inactive
 			*/
-			'status_on' => false,
+			'status_on' => true,
 			
 			/**
 			* @response_type - is for the information to appear on the screen if you set the system status to false
