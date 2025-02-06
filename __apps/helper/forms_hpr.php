@@ -19,6 +19,15 @@
 		 if(empty($field)) return '';
 			 
 		 $fName = isset($field['name']) ? $field['name'] : '';
+		 $fNameV = $fName;
+		 $splt_n_a = explode('[]', $fName);
+		 $_is_array_val = false;
+		 if(isset($splt_n_a[1])){
+			 $fNameV = $splt_n_a[0];
+			 $field['id'] = $splt_n_a[0] . '_' . rand(10,9999);
+			 $_is_array_val = true;
+		 }
+		 
 		 $fId = (isset($field['id'])) ? $field['id'] : $fName;
 		 
 		 if(isset($field['id'])){
@@ -121,20 +130,38 @@
 				}
 				if($fconClass) $_html .= '</div>'; //end of container
 			 }else if($field['type'] == 'checkbox'){
+				 
+				 //$fValue = (isset($props['group_values']) && isset($props['group_values'][$fName])) ? $props['group_values'][$fName] : (isset($field['value']) ? $field['value'] : '');
+				 
 				 if($fconClass) $_html .= '<div class="form-group row">';
 				 if($isView){
-					 $_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
-					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. $fValue .'</div>';
+					$_html .= '<label class="'. $fLblClass .'" for="'. $forId .'">'. $field['label'] .'</label>';
+					$_html .= '<div id="'. $fId .'" class="'. $fClass .'">'. (is_array($fValue) ? implode(', ', $fValue) : $fValue) .'</div>';
 				 }else{
 					 if($fconClass) $_html .= '<div class="'. $fconClass .'">';
 					 $fClass = (isset($field['class'])) ? $field['class'] : '';
 					 if(!empty($field['options']) && is_array($field['options'])){
 						 foreach($field['options'] as $opt){
 							 $fLblRequired = isset($opt['required']) ? 'required' : '';
-							 $_html .= '<label class="'. $fLblClass .'"><input type="checkbox" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $opt['value'] .'" '. $fLblRequired .' '. $fLblAttribs .'/> '. $opt['label'] .'</label>';
+							 $fName = (isset($opt['name'])) ? $opt['name'] : $fName;
+							 $ischecked = (isset($opt['checked']) && $opt['checked']) ? ' checked="checked" ' : '';
+							 $_html .= '<label class="'. $fLblClass .'"><input type="checkbox" '. $ischecked .' name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $opt['value'] .'" '. $fLblRequired .' '. $fLblAttribs .'/> '. $opt['label'] .'</label>';
 						 }
 					 }else{
-						 $_html .= '<label class="'. $fLblClass .'"><input type="checkbox" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $fValue .'" '. $fLblRequired .' '. $fLblAttribs .'/> '. $field['label'] .'</label>';
+						 
+						 if($_is_array_val 
+							&& isset($props['group_values']) 
+							&& isset($props['group_values'][$fNameV])
+							&& in_array($fValue, $props['group_values'][$fNameV]))
+						 {
+							$field['checked'] = true;
+						 }else if(!empty($props['group_values'][$fName])){
+							$field['checked'] = true; 
+						 }
+						 
+						 
+						 $ischecked = (isset($field['checked']) && $field['checked']) ? ' checked="checked" ' : '';
+						 $_html .= '<label class="'. $fLblClass .'"><input '. $ischecked .' type="checkbox" name="'. $fName .'" id="'. $fId .'" class="'. $fClass .'" value="'. $field['value'] .'" '. $fLblRequired .' '. $fLblAttribs .'/> '. $field['label'] .'</label>';
 					 }
 					 if($fconClass) $_html .= '</div>';
 				 }
@@ -421,10 +448,18 @@
 			
 			foreach($this->foreign_save_list as $fn => $al){
 				//get the value
-				$this_val = $this->all_vals[$fn];
+				$this_val = $this->all_vals[$fn] ?? null;
 				foreach($al as $arg){
 					if($act == 'update'){
-						$db->delete($arg['t'])->where($arg['fk'], $curr_id)->run();
+						//When update delete previous data
+						$delln = $db->delete($arg['t'])
+							->where($arg['fk'], $curr_id);
+						if(!empty($arg['xt'])){
+							foreach($arg['xt'] as $xfn => $xfv){
+								$delln = $delln->where($xfn, $xfv);
+							}
+						}
+						$delln->run();
 					}
 					//If action is insert
 					if(in_array($arg['a'], [$act, 'upsert'])){
@@ -447,10 +482,10 @@
 										->data($atts)
 									->run();
 								}
-							}else{
+							}else if($this_val){
 								$atts = [];
 								$atts[$arg['fk']] = $curr_id;
-								$atts[$arg['fv']] = $this->all_vals[$fn];
+								$atts[$arg['fv']] = $this_val;
 								if(!empty($arg['xt'])){
 									foreach($arg['xt'] as $xfn => $xfv){
 										$atts[$xfn] = $xfv;
