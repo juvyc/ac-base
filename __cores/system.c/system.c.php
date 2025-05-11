@@ -3,11 +3,11 @@
 	class _SYSTEM
 	{	
 		private $DB;
-		private $Uri;
+		public $Uri;
 		private $config;
 		private $ACB_GLOBALS = array();
 		private $static_routes = array();
-		private $builder;
+		public $builder;
 		private $inclr_base_segment;
 		private $inclr_end_segment;
 		
@@ -143,6 +143,7 @@
 		*/
 		public function _request_reader($is_home = false)
 		{
+				
 				$this->first_segment_request_manager();
 				
 				$this->last_segment = $this->builder->_clean_segment($this->Uri->get_segment(count($this->Uri->get_segments())));

@@ -2,6 +2,9 @@
 	
 	class _Uri
 	{
+		//Allow to set static URL path
+		public $static_path = null;
+		
 		/**
 		* Get request URL base by segment
 		*/
@@ -62,6 +65,10 @@
 				);
 			}else{
 				$extracted_uri = explode(base_url, $_SERVER['REQUEST_URI']);
+			}
+			
+			if($this->static_path){
+				$extracted_uri = explode(base_url, $this->static_path);
 			}
 				
 			//echo $extracted_uri[1];exit;
